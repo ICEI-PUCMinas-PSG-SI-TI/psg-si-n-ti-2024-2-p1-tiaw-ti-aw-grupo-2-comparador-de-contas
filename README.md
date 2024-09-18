@@ -1,4 +1,4 @@
-# Nome do projeto
+# Comparador de contas
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
