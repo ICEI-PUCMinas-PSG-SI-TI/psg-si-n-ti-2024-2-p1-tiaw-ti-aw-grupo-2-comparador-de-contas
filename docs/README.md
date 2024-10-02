@@ -20,9 +20,11 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Os brasileiros destinam, em média, cerca de 20% de sua renda ao pagamento de contas de água e energia elétrica. Contudo, muitos consumidores não compreendem claramente a origem desses valores. Frequentemente, durante o pagamento, não possuem plena consciência do seu consumo ou se o valor cobrado está de acordo com o uso real. Essas dúvidas levam a questionamentos como: o valor está adequado ao número de moradores? O consumo médio por pessoa está dentro do esperado? Existe a possibilidade de furtos de energia ou vazamentos de água que possam estar inflacionando os custos?
+Em 2023, o furto de energia no Brasil atingiu um recorde. Segundo uma reportagem de Geral Campos Jr., publicada no site Poder360, as chamadas perdas não técnicas — popularmente conhecidas como "gatos" — aumentaram 20% em relação ao ano anterior, alcançando 40,8 terawatts por hora (TWh). Essa realidade agrava ainda mais a insegurança dos consumidores quanto à confiabilidade das suas contas, uma vez que muitos podem estar pagando por energia furtada sem sequer saber.
+ Além disso, muitos consumidores carecem de informações claras sobre o histórico de seus gastos ao longo do tempo, o que dificulta a previsão de futuros valores e o acompanhamento de padrões de consumo. Isso impede uma gestão eficiente das despesas e limita comparações com a média nacional.
+ Por fim, aqueles que buscam adotar um estilo de vida mais ecológico enfrentam dificuldades para entender como reduzir seu consumo de energia de maneira eficaz, limitando sua capacidade de contribuir para práticas sustentáveis e causas ambientais.
+ 
 
 **Links Úteis**:
 
