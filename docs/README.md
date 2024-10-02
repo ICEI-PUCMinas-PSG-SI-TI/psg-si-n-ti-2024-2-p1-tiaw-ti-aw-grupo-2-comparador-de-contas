@@ -118,14 +118,14 @@ Wireframes são protótipos das telas da aplicação usados em design de interfa
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+Durante o desenvolvimento deste projeto, adotamos o framework Scrum, designando Arthur Lacorte como Scrum Master e Victor Torres como Product Owner (PO) para facilitar a organização e a eficiência do time. Essa estrutura nos permitiu dividir as tarefas de maneira estratégica, levando em consideração as habilidades específicas de cada desenvolvedor — Adrielly Lima, Arthur Lacorte, Arthur Moura, Guilherme Coelho, Victor Torres e Victor Wilson — e priorizando entregas de forma ágil e contínua. A documentação do projeto foi realizada por toda a equipe, assegurando que cada etapa do processo estivesse devidamente registrada e acessível a todos.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Além disso, utilizamos o método Kanban para acompanhar o progresso das atividades, organizando nosso fluxo de trabalho em três quadros: um para tarefas não começadas, um para tarefas em andamento e um para tarefas concluídas. Essa abordagem se mostrou extremamente útil para a designação correta das tarefas e para a organização geral do projeto, proporcionando uma visão clara sobre ações pendentes e concluídas, garantindo transparência e coordenação entre os membros da equipe.
 
-**Links Úteis**:
+Empregamos a plataforma Miro para estruturar nossas atividades de Design Thinking, o que foi fundamental para aprofundar nossa compreensão do projeto e identificar oportunidades de melhorias. O Figma foi a plataforma escolhida para elaborar os fluxos de usuário, wireframes das telas e o protótipo interativo, assegurando uma experiência de usuário bem estruturada e coerente com os objetivos do projeto. Além disso, utilizamos o GitHub como repositório de código, permitindo um controle eficiente de versionamento e garantindo que todo o processo estivesse devidamente documentado.
 
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- [Figma - Wireframes das telas e protótipo interativo](https://www.figma.com)
+- [Miro - Ferramenta para etapa do Design Thinking](https://miro.com/pt/)
+- [GitHub - Repositório de Código e Documentação](https://github.com)
+
+
