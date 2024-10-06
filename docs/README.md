@@ -62,14 +62,21 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+**EU COMO... PERSONA
+QUERO/PRECISO... FUNCIONALIDADE
+PARA... MOTIVO**
 
-**Links Úteis**:
+- Marcela precisa utilizar o comparador de gastos para investigar o consumo de energia na sua residência.  
+Mora só e não concorda com o valor que paga pelas contas. O Comparador de gastos servirá como um artifício para questionar o valor cobrado pela distribuidora de energia de sua cidade.
 
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+- Guilherme Santava, usuário comum extremamente preocupado com o meio-ambiente querendo diminuir drasticamente seus consumos hídricos.  
+Entusiasta do mundo ecológico quer levar um estilo de vida mais voltado à simplicidade e busca encontrar a fonte de maior gasto.
+
+- Usuário Anônimo, busca conferir seus gastos mensais com auxílio da ferramenta, sem a necessidade de login.  
+Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
+
+-  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
+Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
 
 ## Histórias de Usuários
 
