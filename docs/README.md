@@ -115,14 +115,22 @@ No link a seguir, está representado o User Flow entre os protótipos das telas 
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+A interface do ContGast foi projetada com foco em simplicidade e didática, assegurando fácil uso por qualquer usuário. A identidade visual da aplicação é composta pelas cores predominantes branco, azul e amarelo. A interface, disponível nas versões web e mobile, é composta por quatro páginas principais: "Visão Geral", "Relatórios", "Gastos" e "Dicas". A função de cada uma dessas telas será detalhada posteriormente. Além disso, a interface foi projetada para conter ícones de ajuda distribuídos pelas telas, facilitando a compreensão de cada seção e reforçando o caráter didático do sistema.
 
-**Links Úteis**:
+A seguir, serão explicadas cada uma das telas da interface do sistema, e, em seguida, apresentaremos os links de cada um dos protótipos.
 
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+Tela inicial: Nessa tela, o usuário obtém uma panorama geral de seus gastos reais e esperados de água e energia em um determinado período.
+
+Relatórios: Essa tela permite a visualização de gráficos detalhados sobre o consumo do usuário em um determinado período. O usuário também pode prever o consumo futuro com base nos dados atuais, simular o valor das contas ao seguir dicas de economia, e exportar relatórios para Excel.
+
+Gastos: Nessa tela, o usuário pode cadastrar categorias de gastos, acompanhar o consumo real e esperado de cada item, acompanhar os valores reais e esperados das contas mensais e registrar novos gastos.
+
+Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuário pode seguir determinadas dicas, e o consumo esperado será ajustado com base nas dicas aplicadas.
+
+Para acessar o repositório interativo na versão web: https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=23-388&node-type=canvas&t=u4nVd8CcwTe6YEHf-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133
+
+Para acessar o repositório interativo na versão mobile: https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168
+
 
 ## Gestão de Projetos
 
