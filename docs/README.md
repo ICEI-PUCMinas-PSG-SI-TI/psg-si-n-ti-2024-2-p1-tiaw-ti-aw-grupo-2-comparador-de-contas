@@ -135,6 +135,8 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma característ
 
 O fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe. 
 
+![userFlowProjeto](assets/images/userFlow.jpg)
+
 No link a seguir, está representado o User Flow entre os protótipos das telas que compõem o sistema ContGast.
 
 
