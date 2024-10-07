@@ -33,32 +33,53 @@ Em 2023, o furto de energia no Brasil atingiu um recorde. Segundo uma reportagem
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+O ContGast foi desenvolvido com o objetivo de oferecer uma ferramenta eficaz para
+o gerenciamento de contas de energia e água dos usuários, promovendo uma melhor
+compreensão dos gastos passados e futuros. O objetivo geral do projeto é fornecer
+uma plataforma prática que permita aos usuários mapear, registrar e armazenar suas
+contas, facilitando o acompanhamento e controle do consumo de recursos
+energéticos e hídricos.
+Para atingir esse objetivo geral, foram definidos alguns objetivos específicos.
+Primeiramente, o software visa fornecer suporte ao usuário na identificação de
+possíveis inconsistências entre o consumo real e o valor cobrado, oferecendo
+transparência e confiança na análise das contas. Em segundo lugar, o ContGast tem
+como propósito apresentar orientações personalizadas para aqueles que desejam
+reduzir seus gastos, promovendo o uso eficiente de energia e água. Por fim, o projeto
+também inclui a criação de uma base de dados com o consumo médio de diferentes
+aparelhos e eletrodomésticos, permitindo que o usuário saiba com precisão o quanto
+cada equipamento consome e como isso impacta em suas despesas.
+Dessa forma, o ContGast não só ajuda os usuários a monitorarem seus gastos, mas
+também promove a educação sobre consumo consciente, alinhando-se com a
+crescente demanda por soluções sustentáveis e financeiras.
 
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A compreensão deficiente dos gastos com água e energia elétrica gera insegurança
+e insatisfação entre os consumidores brasileiros. Com uma média de 20% da renda
+familiar destinada a essas contas, é alarmante que muitos não consigam rastrear a
+origem desses valores ou verificar se refletem o consumo real. O aumento alarmante
+de 20% nos furtos de energia em 2023, alcançando 40,8 TWh, destaca a urgência de
+soluções que promovam transparência e educação no consumo.
+Além disso, a falta de acesso a dados históricos sobre gastos impede uma análise
+eficaz e a tomada de decisões informadas. O nosso projeto se propõe a sanar essas
+lacunas, oferecendo uma plataforma que não apenas informa, mas empodera os
+consumidores a monitorar e gerenciar seus gastos. Isso não só ajudará a esclarecer
+a confiabilidade das contas, mas também incentivará práticas mais sustentáveis.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+O público-alvo do ContGast é diversificado, abrangendo adultos e jovens adultos na
+faixa etária de 20 a 40 anos. Esses indivíduos, geralmente com nível de escolaridade
+médio a superior, estão em busca de uma compreensão mais profunda sobre suas
+contas de água e energia elétrica. Muitos deles residem em áreas urbanas, onde os
+custos com esses serviços podem ser mais elevados e variados.
+Esse grupo inclui consumidores que questionam a precisão das cobranças e desejam
+monitorar seus gastos de forma mais eficaz. Além disso, o software é especialmente
+relevante para aqueles que aspiram a um estilo de vida mais sustentável, promovendo
+práticas ecológicas. As funcionalidades do ContGast, como simulações de gastos com
+diferentes fontes energéticas, visam não apenas fornecer informações, mas também
+capacitar os usuários a fazer escolhas mais conscientes.
 
 ## Personas
 
@@ -80,12 +101,19 @@ Usando o comparador como uma oportunidade para entender o quanto o desleixo de e
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+Marcela Almeida: "Como usuária, desejo aprender sobre outras formas de energia
+para contribuir com a preservação do meio ambiente."
 
-**Links Úteis**:
+Joel Santos: "Como usuário, quero verificar os gastos da minha residência para
+assegurar que estão corretos e que não estou sendo cobrado indevidamente."
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Clara Matos: "Como usuária, gostaria que o site armazenasse meus dados para que
+eu possa acompanhar minha vida financeira de forma contínua."
+
+Gabriel Santana: "Como usuário, desejo que o site me indique a quantidade ideal de
+água a ser consumida em minha residência, com o objetivo de contribuir para a
+proteção do meio ambiente."
+
 
 ## Requisitos
 
