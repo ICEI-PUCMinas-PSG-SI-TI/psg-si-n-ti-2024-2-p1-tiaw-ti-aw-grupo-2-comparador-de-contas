@@ -159,10 +159,12 @@ Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuári
 
 Para acessar o repositório interativo na versão web, **[clique aqui.](https://pucminas.brhttps://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=23-388&node-type=canvas&t=u4nVd8CcwTe6YEHf-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
 
-
+![WireframesWeb](assets/images/wireframes_web.png)
 
 
 Para acessar o repositório interativo na versão mobile, **[clique aqui.](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)**
+
+![WireframesWeb](assets/images/wireframes_mobile.png)
 
 
 ## Gestão de Projetos
