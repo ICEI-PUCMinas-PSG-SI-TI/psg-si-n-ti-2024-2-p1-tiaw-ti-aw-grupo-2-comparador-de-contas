@@ -157,7 +157,7 @@ Gastos: Nessa tela, o usuário pode cadastrar categorias de gastos, acompanhar o
 
 Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuário pode seguir determinadas dicas, e o consumo esperado será ajustado com base nas dicas aplicadas.
 
-Para acessar o repositório interativo na versão web, **[clique aqui.](https://pucminas.brhttps://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=23-388&node-type=canvas&t=u4nVd8CcwTe6YEHf-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
+Para acessar o repositório interativo na versão web, **[clique aqui.](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
 
 ![WireframesWeb](assets/images/wireframes_web.png)
 
