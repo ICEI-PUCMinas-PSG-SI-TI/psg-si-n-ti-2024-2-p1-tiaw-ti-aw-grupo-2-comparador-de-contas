@@ -118,50 +118,34 @@ proteção do meio ambiente."
 ## Requisitos
 
 Lista de requisitos Funcionais e não funcionais
+
 Funcionais:
 
-RF-001: O sistema deve gerar gráficos baseados no consumo de água e energia do 
-usuário, exibindo informações diárias, semanais e mensais. -Prioridade Alta.
+RF-001: O sistema deve permitir que o usuário cadastre seus gastos de energia e de água. Prioridade: Alta
 
-RF-002: O sistema deve exibir um status de desempenho (Péssimo, Ruim, Regular, 
-Bom, Ótimo) com base na avaliação do consumo de água e energia do usuário. -
-Prioridade Baixa
+RF-002: O sistema deve permitir que o usuário cadastre suas informações pessoais e a manutenção dessas informações pessoais. Prioridade: Alta
 
-RF-003: O sistema deve calcular e exibir a diferença entre o consumo real do 
-usuário e o consumo esperado. -Prioridade Média
+RF-003: O sistema deve calcular e exibir a diferença do consumo real e do esperado, tanto para consumo geral quanto para os eletrodomésticos. Prioridade: Alta
 
-RF-004: O sistema deve calcular o consumo de água e energia com base no número 
-de pessoas na residência e nos eletrodomésticos cadastrados. -Prioridade Média
+RF-004: O sistema deve permitir ao usuário visualizar um período específico de suas informações sobre seus gastos. Prioridade: Média
 
-RF-005: O sistema deve mostrar dicas de economia de água e energia. -Prioridade 
-Baixa
+RF-005: O sistema deve gerar relatórios em formato de texto com as informações baseadas do usuário. Prioridade: Média
 
-RF-006: O sistema deve permitir a exportação dos dados de consumo. -Prioridade 
-Média
+RF-006: A aplicação deve fornecer dicas personalizadas baseadas na situação do eletrodoméstico do usuário. Prioridade: Baixa
 
-RF-007: O sistema deve apresentar uma tabela com produtos e seu respectivo gasto 
-de água ou energia. -Prioridade Média
+RF-007: O sistema simula gastos com diferentes fontes de energia. Prioridade: Baixa
 
-RF-008: O sistema deve exibir o histórico de consumo de água e energia do usuário. 
--Prioridade Média
+RF-008: O sistema calcula e mostra os gastos em reais. Prioridade: Média
 
-RF-009: O sistema deve possuir um layout que permita ao usuário escolher entre 
-comparar o consumo de água ou de energia. -Prioridade Alta
+RF-009: O sistema permite baixar relatórios em PDF e enviá-los por e-mail. Prioridade: Baixa
 
-RF-010: O sistema deve calcular o consumo esperado do usuário, com base em 
-fatores definidos, como o número de residentes e tipo de eletrodomésticos. -
-Prioridade Alta
+RF-010: O sistema fornece uma previsão de gastos totais para um período. Prioridade: Média
 
-RF-011: O sistema deve fornecer previsões de gastos futuros com base nos padrões 
-de consumo anteriores. -Prioridade Média
+RF-011: O sistema tem uma seção de ajuda para os usuários. Prioridade: Baixa
 
-RF-012: O sistema deve permitir a simulação da economia de energia ao utilizar 
-outras fontes de energia alternativas. -Prioridade Baixa
+RF-012: O sistema permite enviar feedback e sugestões. Prioridade: Baixa
 
-RF-013: O sistema deve permitir ao usuário comparar o valor mensal de suas contas 
-de água e energia. -Prioridade Alta
-
-Não Funcionais:
+ Nao Funcionais:
 
 RNF-001: O site deve ser responsivo, adaptando-se a diferentes tamanhos de tela e 
 dispositivos. -Prioridade Alta
@@ -180,10 +164,7 @@ Chrome, Firefox, Safari e Edge. -Prioridade Alta
 
 RNF-006: O site deve operar de forma contínua, garantindo disponibilidade 24 horas 
 por dia, 7 dias por semana. -Prioridade Média
-**Links Úteis**:
 
-- [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-- [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## User Flow
 
