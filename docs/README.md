@@ -1,35 +1,9 @@
-# Documentação do Projeto (TIDocs)
-
-Esta pasta armazena a documentação do projeto para a disciplina de **Trabalho Interdisciplinar 1** dos cursos de Tecnologia da Informação da **[PUC Minas](https://pucminas.br)**. Essa documentação é estruturada na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada. Um [exemplo publicado do TIDocs](https://webtech-puc-minas.github.io/ti1-template/) está disponível por meio do repositório do **[WebTech PUC Minas](https://github.com/webtech-pucminas)**.
-
-A documentação do projeto inclui as seguintes seções:
-
-1. Introdução
-2. Contexto
-3. Concepção
-4. Metodologia
-5. Solução
-6. FAQ (Questões frequentes)
-7. Referências Bibliográficas
-
-O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
-
-# Orientações gerais
-
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
-
 ## Problema
 
 Os brasileiros destinam, em média, cerca de 20% de sua renda ao pagamento de contas de água e energia elétrica. Contudo, muitos consumidores não compreendem claramente a origem desses valores. Frequentemente, durante o pagamento, não possuem plena consciência do seu consumo ou se o valor cobrado está de acordo com o uso real. Essas dúvidas levam a questionamentos como: o valor está adequado ao número de moradores? O consumo médio por pessoa está dentro do esperado? Existe a possibilidade de furtos de energia ou vazamentos de água que possam estar inflacionando os custos?
 Em 2023, o furto de energia no Brasil atingiu um recorde. Segundo uma reportagem de Geral Campos Jr., publicada no site Poder360, as chamadas perdas não técnicas — popularmente conhecidas como "gatos" — aumentaram 20% em relação ao ano anterior, alcançando 40,8 terawatts por hora (TWh). Essa realidade agrava ainda mais a insegurança dos consumidores quanto à confiabilidade das suas contas, uma vez que muitos podem estar pagando por energia furtada sem sequer saber.
  Além disso, muitos consumidores carecem de informações claras sobre o histórico de seus gastos ao longo do tempo, o que dificulta a previsão de futuros valores e o acompanhamento de padrões de consumo. Isso impede uma gestão eficiente das despesas e limita comparações com a média nacional.
  Por fim, aqueles que buscam adotar um estilo de vida mais ecológico enfrentam dificuldades para entender como reduzir seu consumo de energia de maneira eficaz, limitando sua capacidade de contribuir para práticas sustentáveis e causas ambientais.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
@@ -51,7 +25,6 @@ cada equipamento consome e como isso impacta em suas despesas.
 Dessa forma, o ContGast não só ajuda os usuários a monitorarem seus gastos, mas
 também promove a educação sobre consumo consciente, alinhando-se com a
 crescente demanda por soluções sustentáveis e financeiras.
-
 
 ## Justificativa
 
@@ -192,12 +165,12 @@ Gastos: Nessa tela, o usuário pode cadastrar categorias de gastos, acompanhar o
 
 Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuário pode seguir determinadas dicas, e o consumo esperado será ajustado com base nas dicas aplicadas.
 
-Para acessar o repositório interativo na versão web, **[clique aqui.](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
+[Wireframe Interativo - WEB](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
 
 ![WireframesWeb](assets/images/wireframes_web.png)
 
 
-Para acessar o repositório interativo na versão mobile, **[clique aqui.](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)**
+[Wireframe Interativo - Mobile](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)**
 
 ![WireframesWeb](assets/images/wireframes_mobile.png)
 
