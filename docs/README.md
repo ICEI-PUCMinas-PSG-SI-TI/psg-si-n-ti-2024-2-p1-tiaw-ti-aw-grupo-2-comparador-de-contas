@@ -90,9 +90,9 @@ proteção do meio ambiente."
 
 ## Requisitos
 
-Lista de requisitos Funcionais e não funcionais
+Lista de requisitos funcionais e não funcionais.
 
-Funcionais:
+**Funcionais:**
 
 RF-001: O sistema deve permitir que o usuário cadastre seus gastos de energia e de água. Prioridade: Alta
 
@@ -118,7 +118,7 @@ RF-011: O sistema tem uma seção de ajuda para os usuários. Prioridade: Baixa
 
 RF-012: O sistema permite enviar feedback e sugestões. Prioridade: Baixa
 
- Nao Funcionais:
+**Não Funcionais:**
 
 RNF-001: O site deve ser responsivo, adaptando-se a diferentes tamanhos de tela e 
 dispositivos. -Prioridade Alta
@@ -165,12 +165,12 @@ Gastos: Nessa tela, o usuário pode cadastrar categorias de gastos, acompanhar o
 
 Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuário pode seguir determinadas dicas, e o consumo esperado será ajustado com base nas dicas aplicadas.
 
-[Wireframe Interativo - WEB](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)**
+[Wireframe Interativo - WEB](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)
 
 ![WireframesWeb](assets/images/wireframes_web.png)
 
 
-[Wireframe Interativo - Mobile](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)**
+[Wireframe Interativo - Mobile](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)
 
 ![WireframesWeb](assets/images/wireframes_mobile.png)
 
