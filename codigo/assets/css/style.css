@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+#profile-img{ 
+    max-width: 40px;
+}
+
+#logo{
+    max-width: 120px;
+}   
+
+a {
+    color: black;
+  }
+  
+  a:hover {
+    color: darkgray; 
+}
+
+#sideList li{
+    padding: 15px;
+}
+
+#mainContent{
+    background-color: lightgray;
+}
+
+@media (min-width: 992px) {
+    #profile-img{ 
+        max-width: 120px;
+    }  
+
+    #navWeb{
+        background-color: white;
+    }
+
+}
+
+
+ 
