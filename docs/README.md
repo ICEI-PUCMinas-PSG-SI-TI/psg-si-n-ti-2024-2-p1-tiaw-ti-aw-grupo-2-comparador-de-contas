@@ -91,80 +91,26 @@ Usando o comparador como uma oportunidade para entender o quanto o desleixo de e
 **Como Devemos Tratá-la:** Gosta de ser sempre bem tratada, tendo a suas dúvidas respondidas e com uma justificativa plausível com fatos.
 
 **Nunca Devemos:** Não suporta atitudes grosseiras e burocracia. Tende sempre a buscar aplicações simples sem muitos malabares. Gosta que sempre levem em consideração a sua família.
-# Persona 2: Joel Santos
-
-## Informações Pessoais
-
-- **Nome:** Joel Santos
-- **Idade:** 27 anos
-- **Hobby:** Vídeo games
-- **Trabalho:** Técnico em Eletrônica
-
-## Personalidade
-
-Joel é um homem simples, recém-formado em eletrônica. Passa boa parte do seu tempo livre jogando video games e programando. Ele é um homem calado, inteligente e que sabe defender seus direitos. 
-
-## Sonhos
-
-Joel sonha em ter uma maior estabilidade financeira e conseguir realizar suas vontades.
-
-## Objetos e Lugares
-
-Joel está acostumado com termos técnicos relacionados ao mundo tecnológico. Como seu trabalho envolve constantemente o uso de cabos, redes, fiações e outros elementos do gênero, ele está familiarizado com esses elementos. Além disso, como é um amante de video games, ele também utiliza muitas interfaces com menus, ícones e opções.
-
-## Objetivos Chave
-
-Joel não concorda com os valores cobrados em suas contas de luz e energia. Ele acredita que nosso sistema pode ajudá-lo a comparar seus gastos reais com o que ele deveria estar pagando, questionando assim a distribuidora de energia.
-
-## Como Devemos Tratá-lo
-
-Joel preza pela praticidade e facilidade. Por ter conhecimento prévio e trabalhar na área de programação, ele prefere interfaces objetivas e facilidade de acesso. Joel prefere um sistema lógico e instrutivo, que forneça todas as informações que ele precisa.
-
-## O Que Não Devemos Fazer
-
-Joel detesta programas desleixados com layouts confusos e mal diagramados. Ele prefere ações rápidas e diretas, sem a necessidade de fornecer muitos dados para uma simples solução. Também não devemos fazer perguntas desnecessárias ou que não tragam resultados úteis.
-
-## Resumo
-
-Joel é um técnico em eletrônica que busca praticidade e clareza em suas ferramentas e sistemas. Ele busca uma forma de comparar seus gastos com a energia e questionar os valores cobrados pela distribuidora. Ao lidar com Joel, devemos priorizar interfaces objetivas e práticas.
 
 ### Joel Santos
 
-## Informações Pessoais
+**Idade:** 27 anos
 
-- **Nome:** Joel Santos
-- **Idade:** 27 anos
-- **Hobby:** Vídeo games
-- **Trabalho:** Técnico em Eletrônica
+**Hobby:** Vídeo games
 
-## Personalidade
+**Trabalho:** Técnico em Eletrônica
 
-Joel é um homem simples, recém-formado em eletrônica. Passa boa parte do seu tempo livre jogando video games e programando. Ele é um homem calado, inteligente e que sabe defender seus direitos. 
+**Personalidade:** Joel é um homem simples, recém-formado em eletrônica. Ele passa boa parte do seu tempo livre jogando vídeo games e programando. É calado, inteligente e sabe defender seus direitos.
 
-## Sonhos
+**Sonhos:** Ter uma maior estabilidade financeira e conseguir realizar suas vontades.
 
-Joel sonha em ter uma maior estabilidade financeira e conseguir realizar suas vontades.
+**Objetos e Lugares:** Joel está familiarizado com termos técnicos do mundo tecnológico. Em seu trabalho, lida com cabos, redes, fiações e outros elementos eletrônicos. Como amante de vídeo games, ele também está habituado a interfaces com menus, ícones e opções.
 
-## Objetos e Lugares
+**Objetivos Chave:** Joel quer comparar seus gastos reais de energia com o que ele deveria estar pagando, para questionar os valores cobrados pela distribuidora de energia.
 
-Joel está acostumado com termos técnicos relacionados ao mundo tecnológico. Como seu trabalho envolve constantemente o uso de cabos, redes, fiações e outros elementos do gênero, ele está familiarizado com esses elementos. Além disso, como é um amante de video games, ele também utiliza muitas interfaces com menus, ícones e opções.
+**Como Devemos Tratá-lo:** Joel preza por praticidade e facilidade de uso. Com seu conhecimento em programação, prefere interfaces objetivas e diretas, com informações claras e acessíveis.
 
-## Objetivos Chave
-
-Joel não concorda com os valores cobrados em suas contas de luz e energia. Ele acredita que nosso sistema pode ajudá-lo a comparar seus gastos reais com o que ele deveria estar pagando, questionando assim a distribuidora de energia.
-
-## Como Devemos Tratá-lo
-
-Joel preza pela praticidade e facilidade. Por ter conhecimento prévio e trabalhar na área de programação, ele prefere interfaces objetivas e facilidade de acesso. Joel prefere um sistema lógico e instrutivo, que forneça todas as informações que ele precisa.
-
-## O Que Não Devemos Fazer
-
-Joel detesta programas desleixados com layouts confusos e mal diagramados. Ele prefere ações rápidas e diretas, sem a necessidade de fornecer muitos dados para uma simples solução. Também não devemos fazer perguntas desnecessárias ou que não tragam resultados úteis.
-
-## Resumo
-
-Joel é um técnico em eletrônica que busca praticidade e clareza em suas ferramentas e sistemas. Ele busca uma forma de comparar seus gastos com a energia e questionar os valores cobrados pela distribuidora. Ao lidar com Joel, devemos priorizar interfaces objetivas e práticas.
-
+**Nunca Devemos:** Joel detesta programas com layouts confusos e desleixados. Ele prefere ações rápidas e diretas, sem a necessidade de fornecer dados em excesso para obter uma solução simples. Evite perguntas desnecessárias ou que não agreguem valor ao processo.
 
 ## Requisitos
 
