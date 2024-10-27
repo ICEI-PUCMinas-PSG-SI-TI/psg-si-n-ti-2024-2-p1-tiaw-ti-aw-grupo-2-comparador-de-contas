@@ -72,6 +72,11 @@ Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
 -  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
 Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
 
+f.write(f"## {persona['nome']}\n")
+    f.write(f"**Idade:** {persona['idade']}\n")
+    f.write(f"**Hobby:** {persona['hobby']}\n")
+    f.write(f"**Trabalho:** {persona['trabalho']}\n")
+
 ## Histórias de Usuários
 
 Marcela Almeida: "Como usuária, desejo aprender sobre outras formas de energia
