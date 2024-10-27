@@ -72,10 +72,26 @@ Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
 -  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
 Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
 
-f.write(f"## {persona['nome']}\n")
-    f.write(f"**Idade:** {persona['idade']}\n")
-    f.write(f"**Hobby:** {persona['hobby']}\n")
-    f.write(f"**Trabalho:** {persona['trabalho']}\n")
+## Marcella Almeida
+
+**Idade:** 30
+
+**Hobby:** Jardinagem
+
+**Trabalho:** Professora de Geografia
+
+**Personalidade:** Marcella é uma mãe jovem com dois filhos. Ela é calma, decidida e cuidadosa. Ela é amante da natureza e do movimento ecológico. Com seu marido tem uma relação estável.
+
+**Sonhos:** Conseguir criar seus filhos com cuidado e atenção, equilibrando a sua vida profissional, a maternidade e seus hobbys, além de ter uma vida financeira mais tranquila.
+
+**Objetos e Lugares:** Marcella utiliza muito seu celular com aplicativos de interface simples, porém detalhadas com várias funções. Por ter uma vida atarefada ela lida muito com eletrodomésticos contendo botões e aberturas. Devido ao seu trabalho constantemente lida com livros e cadernos tendo inúmeras informações além de possuir um vocabulário rebuscado. Seus lugares favoritos são a sua casa, sua sala de aula e seu jardim. Por seu hobby ser a jardinagem ela também constantemente mexe com água e terra além de ter conhecimento sobre gasto de água.
+
+**Objetivos Chave:** Marcella quer com esse sistema calcular a quantidade de energia e água que ela mais a sua família gastam. Por ser uma entusiasta do movimento verde com essa ferramenta ela saberá quanto gasta e assim equilibrar mais o gasto tanto pela questão verde quanto pela financeira.
+
+**Como Devemos Tratá-la:** Gosta de ser sempre bem tratada, tendo a suas dúvidas respondidas e com uma justificativa plausível com fatos.
+
+**Nunca Devemos:** Não suporta atitudes grosseiras e burocracia. Tende sempre a buscar aplicações simples sem muitos malabares. Gosta que sempre levem em consideração a sua família.
+
 
 ## Histórias de Usuários
 
