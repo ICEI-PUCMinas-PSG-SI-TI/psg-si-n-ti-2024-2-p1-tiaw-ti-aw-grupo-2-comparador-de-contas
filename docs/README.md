@@ -72,7 +72,7 @@ Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
 -  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
 Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
 
-## Marcella Almeida
+### Marcella Almeida
 
 **Idade:** 30
 
