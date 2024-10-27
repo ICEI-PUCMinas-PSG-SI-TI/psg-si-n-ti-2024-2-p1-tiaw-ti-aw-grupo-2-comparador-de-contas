@@ -60,18 +60,6 @@ capacitar os usuários a fazer escolhas mais conscientes.
 QUERO/PRECISO... FUNCIONALIDADE
 PARA... MOTIVO**
 
-- Marcela precisa utilizar o comparador de gastos para investigar o consumo de energia na sua residência.  
-Mora só e não concorda com o valor que paga pelas contas. O Comparador de gastos servirá como um artifício para questionar o valor cobrado pela distribuidora de energia de sua cidade.
-
-- Guilherme Santava, usuário comum extremamente preocupado com o meio-ambiente querendo diminuir drasticamente seus consumos hídricos.  
-Entusiasta do mundo ecológico quer levar um estilo de vida mais voltado à simplicidade e busca encontrar a fonte de maior gasto.
-
-- Usuário Anônimo, busca conferir seus gastos mensais com auxílio da ferramenta, sem a necessidade de login.  
-Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
-
--  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
-Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
-
 ### Marcella Almeida
 
 **Idade:** 30
