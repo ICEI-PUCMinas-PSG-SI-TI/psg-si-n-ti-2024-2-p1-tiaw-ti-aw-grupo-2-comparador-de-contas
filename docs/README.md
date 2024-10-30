@@ -54,39 +54,129 @@ práticas ecológicas. As funcionalidades do ContGast, como simulações de gast
 diferentes fontes energéticas, visam não apenas fornecer informações, mas também
 capacitar os usuários a fazer escolhas mais conscientes.
 
-## Personas
+## Personas e Historia de Usuarios
 
 **EU COMO... PERSONA
 QUERO/PRECISO... FUNCIONALIDADE
 PARA... MOTIVO**
 
-- Marcela precisa utilizar o comparador de gastos para investigar o consumo de energia na sua residência.  
-Mora só e não concorda com o valor que paga pelas contas. O Comparador de gastos servirá como um artifício para questionar o valor cobrado pela distribuidora de energia de sua cidade.
+### Marcella Almeida
 
-- Guilherme Santava, usuário comum extremamente preocupado com o meio-ambiente querendo diminuir drasticamente seus consumos hídricos.  
-Entusiasta do mundo ecológico quer levar um estilo de vida mais voltado à simplicidade e busca encontrar a fonte de maior gasto.
+**Idade:** 30
 
-- Usuário Anônimo, busca conferir seus gastos mensais com auxílio da ferramenta, sem a necessidade de login.  
-Uma possível fonte de dicas para realizar alterações e ter um menor consumo.
+**Hobby:** Jardinagem
 
--  Usuário Logado, busca investigar o consumo de energia e água em residências com a possibilidade de analisar e cadastrar histórico de consumo.  
-Usando o comparador como uma oportunidade para entender o quanto o desleixo de esquecer aparelhos ligados e luzes acesas desnecessariamente pesa no valor da conta ao fim do mês.
+**Trabalho:** Professora de Geografia
 
-## Histórias de Usuários
+**Personalidade:** Marcella é uma mãe jovem com dois filhos. Ela é calma, decidida e cuidadosa. Ela é amante da natureza e do movimento ecológico. Com seu marido tem uma relação estável.
 
-Marcela Almeida: "Como usuária, desejo aprender sobre outras formas de energia
-para contribuir com a preservação do meio ambiente."
+**Sonhos:** Conseguir criar seus filhos com cuidado e atenção, equilibrando a sua vida profissional, a maternidade e seus hobbys, além de ter uma vida financeira mais tranquila.
 
-Joel Santos: "Como usuário, quero verificar os gastos da minha residência para
-assegurar que estão corretos e que não estou sendo cobrado indevidamente."
+**Objetos e Lugares:** Marcella utiliza muito seu celular com aplicativos de interface simples, porém detalhadas com várias funções. Por ter uma vida atarefada ela lida muito com eletrodomésticos contendo botões e aberturas. Devido ao seu trabalho constantemente lida com livros e cadernos tendo inúmeras informações além de possuir um vocabulário rebuscado. Seus lugares favoritos são a sua casa, sua sala de aula e seu jardim. Por seu hobby ser a jardinagem ela também constantemente mexe com água e terra além de ter conhecimento sobre gasto de água.
 
-Clara Matos: "Como usuária, gostaria que o site armazenasse meus dados para que
-eu possa acompanhar minha vida financeira de forma contínua."
+**Objetivos Chave:** Marcella quer com esse sistema calcular a quantidade de energia e água que ela mais a sua família gastam. Por ser uma entusiasta do movimento verde com essa ferramenta ela saberá quanto gasta e assim equilibrar mais o gasto tanto pela questão verde quanto pela financeira.
 
-Gabriel Santana: "Como usuário, desejo que o site me indique a quantidade ideal de
-água a ser consumida em minha residência, com o objetivo de contribuir para a
-proteção do meio ambiente."
+**Como Devemos Tratá-la:** Gosta de ser sempre bem tratada, tendo a suas dúvidas respondidas e com uma justificativa plausível com fatos.
 
+**Nunca Devemos:** Não suporta atitudes grosseiras e burocracia. Tende sempre a buscar aplicações simples sem muitos malabares. Gosta que sempre levem em consideração a sua família.
+
+### Joel Santos
+
+**Idade:** 27 anos
+
+**Hobby:** Vídeo games
+
+**Trabalho:** Técnico em Eletrônica
+
+**Personalidade:** Joel é um homem simples, recém-formado em eletrônica. Ele passa boa parte do seu tempo livre jogando vídeo games e programando. É calado, inteligente e sabe defender seus direitos.
+
+**Sonhos:** Ter uma maior estabilidade financeira e conseguir realizar suas vontades.
+
+**Objetos e Lugares:** Joel está familiarizado com termos técnicos do mundo tecnológico. Em seu trabalho, lida com cabos, redes, fiações e outros elementos eletrônicos. Como amante de vídeo games, ele também está habituado a interfaces com menus, ícones e opções.
+
+**Objetivos Chave:** Joel quer comparar seus gastos reais de energia com o que ele deveria estar pagando, para questionar os valores cobrados pela distribuidora de energia.
+
+**Como Devemos Tratá-lo:** Joel preza por praticidade e facilidade de uso. Com seu conhecimento em programação, prefere interfaces objetivas e diretas, com informações claras e acessíveis.
+
+**Nunca Devemos:** Joel detesta programas com layouts confusos e desleixados. Ele prefere ações rápidas e diretas, sem a necessidade de fornecer dados em excesso para obter uma solução simples. Evite perguntas desnecessárias ou que não agreguem valor ao processo.
+
+### João Silva
+
+**Idade:** 22 anos
+
+**Hobby:** Jogar videogame, assistir séries e filmes
+
+**Trabalho:** Estudante de Engenharia
+
+**Personalidade:** João é um jovem extrovertido e sociável. Gosta de estar em contato com as pessoas e de participar de eventos. É um grande fã de tecnologia e adora ficar por dentro das últimas novidades. É dedicado aos estudos e tem grandes ambições para o futuro.
+
+**Sonhos:** Se formar em Engenharia e conseguir um emprego em uma grande empresa. Também sonha em viajar para outros países e conhecer novas culturas.
+
+**Objetos e Lugares:** João usa frequentemente seu notebook e smartphone, além de passar tempo com livros e em locais como sala de aula, biblioteca e laboratórios. Ele também gosta de plataformas de streaming.
+
+**Objetivos Chave:** João quer aprender mais sobre novas tecnologias para aplicá-las em seu cotidiano, ter acesso a conteúdo de qualidade para apoiar seus estudos e, no futuro, encontrar um emprego onde possa utilizar suas habilidades.
+
+**Como Devemos Tratá-lo:** É importante tratá-lo de forma respeitosa e atenciosa, para que ele se sinta acolhido e valorizado.
+
+**Nunca Devemos:** Nunca tratá-lo de forma desrespeitosa ou condescendente. Evitar comentários negativos sobre seus hobbies ou interesses, para que ele não se sinta constrangido.
+
+### Maria Santos
+
+**Idade:** 35 anos
+
+**Hobby:** Cozinhar, ler e cuidar do jardim
+
+**Trabalho:** Dona de casa
+
+**Personalidade:** Maria é uma mulher dedicada à família e ao lar. Gosta de cuidar da casa, preparar refeições saudáveis e criar um ambiente aconchegante para seus familiares. É organizada e responsável, sempre atenta às necessidades da família.
+
+**Sonhos:** Maria deseja criar um ambiente acolhedor e estável para sua família, conciliando as atividades domésticas com o seu tempo para leitura e jardinagem.
+
+**Objetos e Lugares:** Ela usa muitos eletrodomésticos no dia a dia, como fogão, máquina de lavar e aspirador, além de contar com seu celular para acessar aplicativos práticos. Seus lugares favoritos são a cozinha e o jardim, onde passa a maior parte do tempo.
+
+**Objetivos Chave:** Maria busca formas de otimizar o consumo de energia e água em casa, visando reduzir custos e contribuir para a sustentabilidade.
+
+**Como Devemos Tratá-la:** Gosta de um tratamento atencioso e aprecia quando suas dúvidas são respondidas com clareza.
+
+**Nunca Devemos:** Evitar atitudes grosseiras e processos burocráticos, pois ela prefere soluções práticas e simples, que levem em consideração as necessidades de sua família.
+
+### Gabriel Santana
+
+**Idade:** 19
+
+**Hobby:** Mountain Bike
+
+**Trabalho:** Analista Financeiro
+
+**Personalidade:** Gabriel é organizado, calmo e detalhista. Ele está sempre buscando formas de melhorar sua vida e a das pessoas ao seu redor. Adepto a práticas de dieta, também é paciente e gosta de ensinar sobre finanças pessoais. Valoriza a sustentabilidade, estando sempre atento ao uso consciente de recursos, como energia. Apesar de ser sério no trabalho, é descontraído com amigos e adora conversar sobre tecnologia e ciência.
+
+**Sonhos:** Gabriel sonha em ter uma casa no campo, cercada pela natureza, onde possa relaxar e se desconectar da correria do dia a dia. Ele também quer desenvolver um projeto de educação financeira para jovens, ajudando-os a entender o valor do dinheiro e como gerenciá-lo de forma inteligente desde cedo. Além disso, deseja, em algum momento, tirar um ano sabático para viajar.
+
+**Objetos e Lugares:**
+1. **Notebook:** Para trabalho e gerenciamento de finanças familiares.
+2. **Smartphone:** Para comunicação e uso de aplicativos de finanças e controle de consumo.
+3. **Bicicleta de Mountain Bike:** Para passeios e trilhas nos finais de semana.
+4. **Garrafas Reutilizáveis de Água:** Para reduzir o uso de plásticos e garantir o consumo consciente.
+
+**Objetivos Chave:** Usar o site permite que Gabriel tenha uma visão detalhada do seu consumo, possibilitando que tome decisões informadas para economizar dinheiro e minimizar seu impacto ambiental.
+
+**Como Devemos Tratá-lo:** Gosta de clareza e simplicidade, com uma experiência personalizada que ofereça dicas sobre sustentabilidade. A agilidade também é indispensável para ele.
+
+**Nunca Devemos:**
+- Complicar a experiência.
+- Fornecer informações genéricas.
+- Ignorar o contexto sustentável.
+- Ser vagos ou indefinidos.
+
+## História de usuários
+
+- **Marcela Almeida:** "Como usuária, desejo aprender sobre outras formas de energia para contribuir com a preservação do meio ambiente."
+
+- **Joel Santos:** "Como usuário, quero verificar os gastos da minha residência para assegurar que estão corretos e que não estou sendo cobrado indevidamente."
+
+- **Clara Matos:** "Como usuária, gostaria que o site armazenasse meus dados para que eu possa acompanhar minha vida financeira de forma contínua."
+
+- **Gabriel Santana:** "Como usuário, desejo que o site me indique a quantidade ideal de água a ser consumida em minha residência, com o objetivo de contribuir para a proteção do meio ambiente."
 
 ## Requisitos
 
