@@ -6,9 +6,10 @@
     <title>ContGast - Lançamentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <script src="../assets/js/app.js"></script>
 </head>
-<body>
-    <div class="container-fluid m-0 p-0 mx-auto p-lg-4 h-100">
+<body class="h-auto">
+    <div class="container m-0 p-0 mx-auto p-lg-4 h-100">
         <!-- Navbar mobile-->
         <div class="row mx-auto d-lg-none">
             <div class="col-12 d-flex justify-content-between align-items-center mt-2 p-2">
@@ -73,33 +74,245 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-9 content-col m-0 p-0" id="mainContent">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 d-none d-lg-flex align-items-center p-0" id="navWeb">
-                            <ul class="list-inline d-flex justify-content-center p-0 mt-3 flex-grow-1">
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Visão Geral</a>
-                                </li>
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Relatórios</a>
-                                </li>
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Lançamentos</a>
-                                </li>
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Simulação</a>
-                                </li>
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Previsões</a>
-                                </li>
-                                <li class="list-inline-item flex-fill text-center">
-                                    <a href="#">Dicas</a>
-                                </li>
-                            </ul>
+                <div class="row mx-auto">
+                    <div class="col-12 d-none d-lg-flex align-items-center p-0" id="navWeb">
+                        <ul class="list-inline d-flex justify-content-between p-0 mt-3 flex-grow-1">
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Visão Geral</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Relatórios</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none border-bottom border-secondary">Lançamentos</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Simulação</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Previsões</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Dicas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="m-2 mt-5 m-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="navIcon" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                            <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                        </svg>
+                        <div class="ms-2 text-start"> 
+                            <h3 class="m-0">Lançamentos</h3>
+                            <p>
+                                Registre suas informações relativas ao consumo de água e energia elétrica.
+                            </p>
                         </div>
                     </div>
-                    <div class="row">
-                        
+                    <span class="border border-secondary border-opacity-50 d-block mx-auto" id="border"></span>
+                </div>
+                <!-- row com conteúdo principal (Funcionalidade de cada tela)-->                           
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-12 col-lg-10 mt-2 mt-lg-3 d-flex flex-column h-auto pb-2" id="main">
+                        <h5 class="m-2 mb-3 text-center">Cadastre seus equipamentos</h5>
+                        <div id="formCadastro" class="text-center col-12">
+                            <form action="#" class="justify-content-center">
+                                <div class="mb-3">
+                                    <label for="eletrodomestico" class="form-label fw-bold">Equipamento:</label>
+                                    <select id="eletrodomestico" name="eletrodomestico" class="form-select w-50 mx-auto text-center border border-dark">
+                                        <option value="chuveiro">Chuveiro</option>
+                                        <option value="ar-condicionado">Ar-condicionado</option>
+                                        <option value="maquina-lavar">Máquina de Lavar</option>
+                                        <option value="geladeira">Geladeira</option>
+                                        <option value="geladeira">Televisão</option>
+                                        <option value="geladeira">Computador</option>
+                                        <option value="geladeira">Vaso Sanitário</option>
+                                        <option value="geladeira">Chuveiro eletétrico</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="quantidade" class="form-label fw-bold">Quantidade em sua residência:</label>
+                                    <input type="text" id="quantidade" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="usoDiario" class="form-label fw-bold">Usos por dia:</label>
+                                    <input type="text" id="quantidade" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <!-- Botão de salvar -->
+                                <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+                            </form>
+                        </div>
+                        <!-- Botão editar equipamentos cadastros -->
+                        <div class="text-center mt-3">
+                            <button type="button" class="btn border border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Editar equipamentos cadastrados
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5 p-0" id="exampleModalLabel">Equipamentos Cadastrados</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item text-start">Chuveiro
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Ar-Condicionado
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Máquina de lavar
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Geladeira
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Televisão
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Computador
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Vaso Sanitário
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start">Chuveiro Elétrico
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidade" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidade" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiario" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiario" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>            
