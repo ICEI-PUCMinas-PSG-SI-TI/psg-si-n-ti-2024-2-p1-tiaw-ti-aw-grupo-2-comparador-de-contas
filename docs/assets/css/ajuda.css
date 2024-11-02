@@ -1,0 +1,43 @@
+.imagemAjuda{
+    float: left;
+}
+
+/*Modificar a imagem ajuda para desktops*/
+@media (min-width: 1024px) {
+    .imagemAjuda {
+        margin-top: 5px;
+    }
+}
+
+.inicioAjuda{
+    margin-top:50px;
+}
+
+.pAjuda{
+    margin-left: 50px;
+}
+
+.botaoAjuda{
+    background-color: #0899E5; /* Sets the background color to blue */
+    color:#FFFFFF; /* Sets the text color to white */
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 41px; /* Sets a fixed width */
+    height: 41px; /* Sets a fixed height */
+    padding: 10px 20px; /* Adds some padding for better appearance */
+    text-align: center; 
+}
+
+.topicoAjuda{
+    margin-top: 15.5px;
+}
+
+.topicoAjuda h2, .topicoAjuda h3, .topicoAjuda h4{
+    display: inline;
+}
+
+.topicoAjuda p{
+    margin-left: 60px;
+    margin-top: 10px;
+}
