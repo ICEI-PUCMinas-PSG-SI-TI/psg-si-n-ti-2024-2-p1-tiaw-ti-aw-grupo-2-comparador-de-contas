@@ -1,0 +1,36 @@
+#myTab {
+    border-bottom: 2px solid #919191;
+    /* Borda inferior mais grossa e em cinza claro */
+}
+
+
+.situacao {
+    display: flex;
+    /* Garante que os itens sejam flexíveis */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+.consumo {
+    display: flex;
+    /* Garante que os itens sejam flexíveis */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 30px;
+}
