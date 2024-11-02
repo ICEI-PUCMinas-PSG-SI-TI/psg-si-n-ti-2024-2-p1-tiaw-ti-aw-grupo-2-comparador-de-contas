@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#img-central {
+    width: 100%; /* Muda a largura da imagem para 100% */
+    max-width: 550px; /* Largura máxima de 450px */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Sombra abaixo da imagem */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 150px;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.form-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens da forma quebrem para a linha seguinte */
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-section {
+    flex: 1; /* Permite que as seções ocupem espaço proporcional */
+    min-width: 250px; /* Largura mínima */
+    max-width: 350px; /* Largura máxima */
+    text-align: left;
+}
+
+.form-section h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: flex;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input[type="file"] {
+    display: none;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-upload {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.photo-upload .icon-camera {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 18px;
+    color: #888;
+}
+
+button {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color:#8a8f8a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    align-items: center;
+    display: inline-flex;
+}
+
+/* Caixa de mensagem de erro */
+#msgError {
+    display: none;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Caixa de mensagem de sucesso */
+#msgSuccess {
+    display: none;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px; /* Tamanho da fonte do título em telas menores */
+    }
+
+    header img {
+        width: 100px; /* Reduz a largura da imagem do cabeçalho em telas menores */
+    }
+
+    .form-section {
+        flex: 1 0 100%; /* Permite que a seção do formulário ocupe 100% da largura */
+        max-width: none; /* Remove o máximo de largura para permitir que se estenda */
+    }
+
+    button {
+        max-width: 100%; /* Botão ocupa 100% da largura do contêiner em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        font-size: 16px; /* Reduz o tamanho da fonte do texto do cabeçalho em telas pequenas */
+    }
+
+    .form-card {
+        padding: 20px; /* Reduz o preenchimento da carta do formulário */
+    }
+
+    .form-group label {
+        font-size: 12px; /* Reduz o tamanho da fonte do rótulo em telas pequenas */
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 12px; /* Reduz o tamanho da fonte dos campos de entrada em telas pequenas */
+    }
+
+    button {
+        padding: 8px; /* Reduz o preenchimento do botão */
+    }
+}
+
+/* Alinhar as labels acima dos campos de entrada */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do campo */
+    margin-bottom: 20px; /* Espaço entre os grupos de formulário */
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+#verConfirmSenha,#verSenha {
+    background-color: transparent;
+    width: 24px;
+    color: #666;
+    padding: 0.2px 0.2px; /* Ajuste o espaço interno (topo/baixo e laterais) */
+    font-size: 15px;   /* Diminui o tamanho do texto */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#ia{
+    display: flex;
+    align-items: center;
+    
+}
