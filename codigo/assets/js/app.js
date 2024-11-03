@@ -214,8 +214,9 @@ $(document).ready(function () {
     }
 
     const dados = JSON.parse(localStorage.getItem('equipamentosSalvosLocal'));
+    console.log(dados)
 
-    function calculaConsumoReal(obj) {
+    function calculaConsumoRealAgua(obj) {
         const { chuveiro, maquina, vaso } = obj
 
         function validaTamanhoMaquina(tamanho) {
@@ -233,8 +234,8 @@ $(document).ready(function () {
         const calculoMaquina = maquina?.quantidade * maquina?.usoSemanal * validaTamanhoMaquina(maquina?.tamanho) * 4;
         const calculoVaso = vaso?.quantidade * vaso?.usoDiario * 72;
         // console.log(calculoChuveiro)
-        $("#chuveiro_real").css('width', (calculoChuveiro * 100) / 50000 + "%")
-        $("#chuveiro_real_valor").text(calculoChuveiro + "L")
+        $("#chuveiro_agua_real").css('width', (calculoChuveiro * 100) / 50000 + "%")
+        $("chuveiro_agua_real_valor").text(calculoChuveiro + "L")
 
         $("#maquina_real").css('width', (calculoMaquina * 100 / 100000 + "%"))
         $("#maquina_real_valor").text(calculoMaquina + "L")
@@ -244,8 +245,8 @@ $(document).ready(function () {
     }
 
     if (!dados) {
-        $("#chuveiro_real_valor").text("Insira valores para realizar o cálculo")
-        $("#chuveiro_real").css("width", "100%")
+        $("chuveiro_agua_real_valor").text("Insira valores para realizar o cálculo")
+        $("#chuveiro_agua_real").css("width", "100%")
 
         $("#maquina_real_valor").text("Insira valores para realizar o cálculo")
         $("#maquina_real").css("width", "100%")
@@ -254,6 +255,52 @@ $(document).ready(function () {
         $("#vaso_real").css("width", "100%")
         return
     } else {
-        calculaConsumoReal(dados)
+        calculaConsumoRealAgua(dados)
     }
+
+
+
+
+    function calculaConsumoRealEnergia(obj) {
+        const { chuveiro, geladeira, ar, tv, pc } = obj
+
+        function validaTamanhoGeladeira(tamanho) {
+            let tamanhoReal;
+            if (tamanho === "p") {
+                return tamanhoReal = 135;
+            } else if (tamanho === "m") {
+                return tamanhoReal = 168;
+            } else {
+                return tamanhoReal = 197;
+            }
+        }
+
+        const calculoChuveiro = chuveiro?.quantidade * chuveiro?.usoDiario * chuveiro?.minutos * 4.2 * 30;
+        const calculoMaquina = maquina?.quantidade * maquina?.usoSemanal * validaTamanhoMaquina(maquina?.tamanho) * 4;
+        const calculoVaso = vaso?.quantidade * vaso?.usoDiario * 72;
+        // console.log(calculoChuveiro)
+        $("#chuveiro_agua_real").css('width', (calculoChuveiro * 100) / 50000 + "%")
+        $("chuveiro_agua_real_valor").text(calculoChuveiro + "L")
+
+        $("#maquina_real").css('width', (calculoMaquina * 100 / 100000 + "%"))
+        $("#maquina_real_valor").text(calculoMaquina + "L")
+
+        $("#vaso_real").css('width', (calculoVaso * 100 / 10000 + "%"))
+        $("#vaso_real_valor").text(calculoVaso + "L")
+    }
+
+    if (!dados) {
+        $("chuveiro_agua_real_valor").text("Insira valores para realizar o cálculo")
+        $("#chuveiro_agua_real").css("width", "100%")
+
+        $("#maquina_real_valor").text("Insira valores para realizar o cálculo")
+        $("#maquina_real").css("width", "100%")
+
+        $("#vaso_real_valor").text("Insira valores para realizar o cálculo")
+        $("#vaso_real").css("width", "100%")
+        return
+    } else {
+        calculaConsumoRealAgua(dados)
+    }   
+
 });
