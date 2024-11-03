@@ -1,131 +1,280 @@
-# Documentação do Projeto (TIDocs)
-
-Esta pasta armazena a documentação do projeto para a disciplina de **Trabalho Interdisciplinar 1** dos cursos de Tecnologia da Informação da **[PUC Minas](https://pucminas.br)**. Essa documentação é estruturada na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada. Um [exemplo publicado do TIDocs](https://webtech-puc-minas.github.io/ti1-template/) está disponível por meio do repositório do **[WebTech PUC Minas](https://github.com/webtech-pucminas)**.
-
-A documentação do projeto inclui as seguintes seções:
-
-1. Introdução
-2. Contexto
-3. Concepção
-4. Metodologia
-5. Solução
-6. FAQ (Questões frequentes)
-7. Referências Bibliográficas
-
-O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
-
-# Orientações gerais
-
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
-
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Os brasileiros destinam, em média, cerca de 20% de sua renda ao pagamento de contas de água e energia elétrica. Contudo, muitos consumidores não compreendem claramente a origem desses valores. Frequentemente, durante o pagamento, não possuem plena consciência do seu consumo ou se o valor cobrado está de acordo com o uso real. Essas dúvidas levam a questionamentos como: o valor está adequado ao número de moradores? O consumo médio por pessoa está dentro do esperado? Existe a possibilidade de furtos de energia ou vazamentos de água que possam estar inflacionando os custos?
+Em 2023, o furto de energia no Brasil atingiu um recorde. Segundo uma reportagem de Geral Campos Jr., publicada no site Poder360, as chamadas perdas não técnicas — popularmente conhecidas como "gatos" — aumentaram 20% em relação ao ano anterior, alcançando 40,8 terawatts por hora (TWh). Essa realidade agrava ainda mais a insegurança dos consumidores quanto à confiabilidade das suas contas, uma vez que muitos podem estar pagando por energia furtada sem sequer saber.
+ Além disso, muitos consumidores carecem de informações claras sobre o histórico de seus gastos ao longo do tempo, o que dificulta a previsão de futuros valores e o acompanhamento de padrões de consumo. Isso impede uma gestão eficiente das despesas e limita comparações com a média nacional.
+ Por fim, aqueles que buscam adotar um estilo de vida mais ecológico enfrentam dificuldades para entender como reduzir seu consumo de energia de maneira eficaz, limitando sua capacidade de contribuir para práticas sustentáveis e causas ambientais.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O ContGast foi desenvolvido com o objetivo de oferecer uma ferramenta eficaz para
+o gerenciamento de contas de energia e água dos usuários, promovendo uma melhor
+compreensão dos gastos passados e futuros. O objetivo geral do projeto é fornecer
+uma plataforma prática que permita aos usuários mapear, registrar e armazenar suas
+contas, facilitando o acompanhamento e controle do consumo de recursos
+energéticos e hídricos.
+Para atingir esse objetivo geral, foram definidos alguns objetivos específicos.
+Primeiramente, o software visa fornecer suporte ao usuário na identificação de
+possíveis inconsistências entre o consumo real e o valor cobrado, oferecendo
+transparência e confiança na análise das contas. Em segundo lugar, o ContGast tem
+como propósito apresentar orientações personalizadas para aqueles que desejam
+reduzir seus gastos, promovendo o uso eficiente de energia e água. Por fim, o projeto
+também inclui a criação de uma base de dados com o consumo médio de diferentes
+aparelhos e eletrodomésticos, permitindo que o usuário saiba com precisão o quanto
+cada equipamento consome e como isso impacta em suas despesas.
+Dessa forma, o ContGast não só ajuda os usuários a monitorarem seus gastos, mas
+também promove a educação sobre consumo consciente, alinhando-se com a
+crescente demanda por soluções sustentáveis e financeiras.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A compreensão deficiente dos gastos com água e energia elétrica gera insegurança
+e insatisfação entre os consumidores brasileiros. Com uma média de 20% da renda
+familiar destinada a essas contas, é alarmante que muitos não consigam rastrear a
+origem desses valores ou verificar se refletem o consumo real. O aumento alarmante
+de 20% nos furtos de energia em 2023, alcançando 40,8 TWh, destaca a urgência de
+soluções que promovam transparência e educação no consumo.
+Além disso, a falta de acesso a dados históricos sobre gastos impede uma análise
+eficaz e a tomada de decisões informadas. O nosso projeto se propõe a sanar essas
+lacunas, oferecendo uma plataforma que não apenas informa, mas empodera os
+consumidores a monitorar e gerenciar seus gastos. Isso não só ajudará a esclarecer
+a confiabilidade das contas, mas também incentivará práticas mais sustentáveis.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo do ContGast é diversificado, abrangendo adultos e jovens adultos na
+faixa etária de 20 a 40 anos. Esses indivíduos, geralmente com nível de escolaridade
+médio a superior, estão em busca de uma compreensão mais profunda sobre suas
+contas de água e energia elétrica. Muitos deles residem em áreas urbanas, onde os
+custos com esses serviços podem ser mais elevados e variados.
+Esse grupo inclui consumidores que questionam a precisão das cobranças e desejam
+monitorar seus gastos de forma mais eficaz. Além disso, o software é especialmente
+relevante para aqueles que aspiram a um estilo de vida mais sustentável, promovendo
+práticas ecológicas. As funcionalidades do ContGast, como simulações de gastos com
+diferentes fontes energéticas, visam não apenas fornecer informações, mas também
+capacitar os usuários a fazer escolhas mais conscientes.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+## Personas e Historia de Usuarios
 
-**Links Úteis**:
+**EU COMO... PERSONA
+QUERO/PRECISO... FUNCIONALIDADE
+PARA... MOTIVO**
 
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+### Marcella Almeida
 
-## Personas
+**Idade:** 30
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+**Hobby:** Jardinagem
 
-**Links Úteis**:
+**Trabalho:** Professora de Geografia
 
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+**Personalidade:** Marcella é uma mãe jovem com dois filhos. Ela é calma, decidida e cuidadosa. Ela é amante da natureza e do movimento ecológico. Com seu marido tem uma relação estável.
 
-## Histórias de Usuários
+**Sonhos:** Conseguir criar seus filhos com cuidado e atenção, equilibrando a sua vida profissional, a maternidade e seus hobbys, além de ter uma vida financeira mais tranquila.
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+**Objetos e Lugares:** Marcella utiliza muito seu celular com aplicativos de interface simples, porém detalhadas com várias funções. Por ter uma vida atarefada ela lida muito com eletrodomésticos contendo botões e aberturas. Devido ao seu trabalho constantemente lida com livros e cadernos tendo inúmeras informações além de possuir um vocabulário rebuscado. Seus lugares favoritos são a sua casa, sua sala de aula e seu jardim. Por seu hobby ser a jardinagem ela também constantemente mexe com água e terra além de ter conhecimento sobre gasto de água.
 
-**Links Úteis**:
+**Objetivos Chave:** Marcella quer com esse sistema calcular a quantidade de energia e água que ela mais a sua família gastam. Por ser uma entusiasta do movimento verde com essa ferramenta ela saberá quanto gasta e assim equilibrar mais o gasto tanto pela questão verde quanto pela financeira.
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+**Como Devemos Tratá-la:** Gosta de ser sempre bem tratada, tendo a suas dúvidas respondidas e com uma justificativa plausível com fatos.
+
+**Nunca Devemos:** Não suporta atitudes grosseiras e burocracia. Tende sempre a buscar aplicações simples sem muitos malabares. Gosta que sempre levem em consideração a sua família.
+
+### Joel Santos
+
+**Idade:** 27 anos
+
+**Hobby:** Vídeo games
+
+**Trabalho:** Técnico em Eletrônica
+
+**Personalidade:** Joel é um homem simples, recém-formado em eletrônica. Ele passa boa parte do seu tempo livre jogando vídeo games e programando. É calado, inteligente e sabe defender seus direitos.
+
+**Sonhos:** Ter uma maior estabilidade financeira e conseguir realizar suas vontades.
+
+**Objetos e Lugares:** Joel está familiarizado com termos técnicos do mundo tecnológico. Em seu trabalho, lida com cabos, redes, fiações e outros elementos eletrônicos. Como amante de vídeo games, ele também está habituado a interfaces com menus, ícones e opções.
+
+**Objetivos Chave:** Joel quer comparar seus gastos reais de energia com o que ele deveria estar pagando, para questionar os valores cobrados pela distribuidora de energia.
+
+**Como Devemos Tratá-lo:** Joel preza por praticidade e facilidade de uso. Com seu conhecimento em programação, prefere interfaces objetivas e diretas, com informações claras e acessíveis.
+
+**Nunca Devemos:** Joel detesta programas com layouts confusos e desleixados. Ele prefere ações rápidas e diretas, sem a necessidade de fornecer dados em excesso para obter uma solução simples. Evite perguntas desnecessárias ou que não agreguem valor ao processo.
+
+### João Silva
+
+**Idade:** 22 anos
+
+**Hobby:** Jogar videogame, assistir séries e filmes
+
+**Trabalho:** Estudante de Engenharia
+
+**Personalidade:** João é um jovem extrovertido e sociável. Gosta de estar em contato com as pessoas e de participar de eventos. É um grande fã de tecnologia e adora ficar por dentro das últimas novidades. É dedicado aos estudos e tem grandes ambições para o futuro.
+
+**Sonhos:** Se formar em Engenharia e conseguir um emprego em uma grande empresa. Também sonha em viajar para outros países e conhecer novas culturas.
+
+**Objetos e Lugares:** João usa frequentemente seu notebook e smartphone, além de passar tempo com livros e em locais como sala de aula, biblioteca e laboratórios. Ele também gosta de plataformas de streaming.
+
+**Objetivos Chave:** João quer aprender mais sobre novas tecnologias para aplicá-las em seu cotidiano, ter acesso a conteúdo de qualidade para apoiar seus estudos e, no futuro, encontrar um emprego onde possa utilizar suas habilidades.
+
+**Como Devemos Tratá-lo:** É importante tratá-lo de forma respeitosa e atenciosa, para que ele se sinta acolhido e valorizado.
+
+**Nunca Devemos:** Nunca tratá-lo de forma desrespeitosa ou condescendente. Evitar comentários negativos sobre seus hobbies ou interesses, para que ele não se sinta constrangido.
+
+### Maria Santos
+
+**Idade:** 35 anos
+
+**Hobby:** Cozinhar, ler e cuidar do jardim
+
+**Trabalho:** Dona de casa
+
+**Personalidade:** Maria é uma mulher dedicada à família e ao lar. Gosta de cuidar da casa, preparar refeições saudáveis e criar um ambiente aconchegante para seus familiares. É organizada e responsável, sempre atenta às necessidades da família.
+
+**Sonhos:** Maria deseja criar um ambiente acolhedor e estável para sua família, conciliando as atividades domésticas com o seu tempo para leitura e jardinagem.
+
+**Objetos e Lugares:** Ela usa muitos eletrodomésticos no dia a dia, como fogão, máquina de lavar e aspirador, além de contar com seu celular para acessar aplicativos práticos. Seus lugares favoritos são a cozinha e o jardim, onde passa a maior parte do tempo.
+
+**Objetivos Chave:** Maria busca formas de otimizar o consumo de energia e água em casa, visando reduzir custos e contribuir para a sustentabilidade.
+
+**Como Devemos Tratá-la:** Gosta de um tratamento atencioso e aprecia quando suas dúvidas são respondidas com clareza.
+
+**Nunca Devemos:** Evitar atitudes grosseiras e processos burocráticos, pois ela prefere soluções práticas e simples, que levem em consideração as necessidades de sua família.
+
+### Gabriel Santana
+
+**Idade:** 19
+
+**Hobby:** Mountain Bike
+
+**Trabalho:** Analista Financeiro
+
+**Personalidade:** Gabriel é organizado, calmo e detalhista. Ele está sempre buscando formas de melhorar sua vida e a das pessoas ao seu redor. Adepto a práticas de dieta, também é paciente e gosta de ensinar sobre finanças pessoais. Valoriza a sustentabilidade, estando sempre atento ao uso consciente de recursos, como energia. Apesar de ser sério no trabalho, é descontraído com amigos e adora conversar sobre tecnologia e ciência.
+
+**Sonhos:** Gabriel sonha em ter uma casa no campo, cercada pela natureza, onde possa relaxar e se desconectar da correria do dia a dia. Ele também quer desenvolver um projeto de educação financeira para jovens, ajudando-os a entender o valor do dinheiro e como gerenciá-lo de forma inteligente desde cedo. Além disso, deseja, em algum momento, tirar um ano sabático para viajar.
+
+**Objetos e Lugares:**
+1. **Notebook:** Para trabalho e gerenciamento de finanças familiares.
+2. **Smartphone:** Para comunicação e uso de aplicativos de finanças e controle de consumo.
+3. **Bicicleta de Mountain Bike:** Para passeios e trilhas nos finais de semana.
+4. **Garrafas Reutilizáveis de Água:** Para reduzir o uso de plásticos e garantir o consumo consciente.
+
+**Objetivos Chave:** Usar o site permite que Gabriel tenha uma visão detalhada do seu consumo, possibilitando que tome decisões informadas para economizar dinheiro e minimizar seu impacto ambiental.
+
+**Como Devemos Tratá-lo:** Gosta de clareza e simplicidade, com uma experiência personalizada que ofereça dicas sobre sustentabilidade. A agilidade também é indispensável para ele.
+
+**Nunca Devemos:**
+- Complicar a experiência.
+- Fornecer informações genéricas.
+- Ignorar o contexto sustentável.
+- Ser vagos ou indefinidos.
+
+## História de usuários
+
+- **Marcela Almeida:** "Como usuária, desejo aprender sobre outras formas de energia para contribuir com a preservação do meio ambiente."
+
+- **Joel Santos:** "Como usuário, quero verificar os gastos da minha residência para assegurar que estão corretos e que não estou sendo cobrado indevidamente."
+
+- **Clara Matos:** "Como usuária, gostaria que o site armazenasse meus dados para que eu possa acompanhar minha vida financeira de forma contínua."
+
+- **Gabriel Santana:** "Como usuário, desejo que o site me indique a quantidade ideal de água a ser consumida em minha residência, com o objetivo de contribuir para a proteção do meio ambiente."
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
+Lista de requisitos funcionais e não funcionais.
 
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
+**Funcionais:**
 
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+RF-001: O sistema deve permitir que o usuário cadastre seus gastos de energia e de água. Prioridade: Alta
 
-**Links Úteis**:
+RF-002: O sistema deve permitir que o usuário cadastre suas informações pessoais e a manutenção dessas informações pessoais. Prioridade: Alta
 
-- [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-- [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+RF-003: O sistema deve calcular e exibir a diferença do consumo real e do esperado, tanto para consumo geral quanto para os eletrodomésticos. Prioridade: Alta
+
+RF-004: O sistema deve permitir ao usuário visualizar um período específico de suas informações sobre seus gastos. Prioridade: Média
+
+RF-005: O sistema deve gerar relatórios em formato de texto com as informações baseadas do usuário. Prioridade: Média
+
+RF-006: A aplicação deve fornecer dicas personalizadas baseadas na situação do eletrodoméstico do usuário. Prioridade: Baixa
+
+RF-007: O sistema simula gastos com diferentes fontes de energia. Prioridade: Baixa
+
+RF-008: O sistema calcula e mostra os gastos em reais. Prioridade: Média
+
+RF-009: O sistema permite baixar relatórios em PDF e enviá-los por e-mail. Prioridade: Baixa
+
+RF-010: O sistema fornece uma previsão de gastos totais para um período. Prioridade: Média
+
+RF-011: O sistema tem uma seção de ajuda para os usuários. Prioridade: Baixa
+
+RF-012: O sistema permite enviar feedback e sugestões. Prioridade: Baixa
+
+**Não Funcionais:**
+
+RNF-001: O site deve ser responsivo, adaptando-se a diferentes tamanhos de tela e 
+dispositivos. -Prioridade Alta
+
+RNF-002: O sistema deve processar rapidamente as requisições do usuário, com 
+tempo de resposta não superior a 5 segundos. -Prioridade Média
+
+RNF-003: O site deve ser fácil de usar, garantindo uma experiência intuitiva e 
+acessível para todos os usuários. -Prioridade Alta
+
+RNF-004: O site deve ser seguro, implementando medidas de proteção de dados e 
+privacidade dos usuários. -Prioridade Alta
+
+RNF-005: O site deve ser compatível com os principais navegadores, incluindo 
+Chrome, Firefox, Safari e Edge. -Prioridade Alta
+
+RNF-006: O site deve operar de forma contínua, garantindo disponibilidade 24 horas 
+por dia, 7 dias por semana. -Prioridade Média
+
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+O fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe. 
 
-**Links Úteis**:
+![userFlowProjeto](assets/images/userFlow.jpg)
 
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+No link a seguir, está representado o User Flow entre os protótipos das telas que compõem o sistema ContGast.
+
+
+ - [User Flow Figma](https://www.figma.com/design/oi5DgFxqOPBsD0stUMQ0jn/User-Flow?node-id=0-1&t=I2f0MCytSmgya09c-1)
+
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+A interface do ContGast foi projetada com foco em simplicidade e didática, assegurando fácil uso por qualquer usuário. A identidade visual da aplicação é composta pelas cores predominantes branco, azul e amarelo. A interface, disponível nas versões web e mobile, é composta por quatro páginas principais: "Visão Geral", "Relatórios", "Gastos" e "Dicas". A função de cada uma dessas telas será detalhada posteriormente. Além disso, a interface foi projetada para conter ícones de ajuda distribuídos pelas telas, facilitando a compreensão de cada seção e reforçando o caráter didático do sistema.
 
-**Links Úteis**:
+A seguir, serão explicadas cada uma das telas da interface do sistema, e, em seguida, apresentaremos os links de cada um dos protótipos.
 
-- [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-- [Figma](https://www.figma.com/)
-- [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-- [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+Tela inicial: Nessa tela, o usuário obtém uma panorama geral de seus gastos reais e esperados de água e energia em um determinado período.
+
+Relatórios: Essa tela permite a visualização de gráficos detalhados sobre o consumo do usuário em um determinado período. O usuário também pode prever o consumo futuro com base nos dados atuais, simular o valor das contas ao seguir dicas de economia, e exportar relatórios para Excel.
+
+Gastos: Nessa tela, o usuário pode cadastrar categorias de gastos, acompanhar o consumo real e esperado de cada item, acompanhar os valores reais e esperados das contas mensais e registrar novos gastos.
+
+Dicas: Essa tela exibe sugestões de economia fornecidas pelo sistema. O usuário pode seguir determinadas dicas, e o consumo esperado será ajustado com base nas dicas aplicadas.
+
+[Wireframe Interativo - WEB](https://www.figma.com/proto/6fZOCVAmiKTQvtfgX6iJIC/Interface-Web?node-id=52-419&node-type=canvas&t=6bafcn79ZTXnPp0q-1&scaling=min-zoom&content-scaling=fixed&page-id=23%3A279&starting-point-node-id=81%3A133)
+
+![WireframesWeb](assets/images/wireframes_web.png)
+
+
+[Wireframe Interativo - Mobile](https://www.figma.com/proto/IoxKG9q25EMcx8i8Fj7ZC5/Interface-Mobile?node-id=34-1168&node-type=canvas&t=lM5OC5u9wQs8142I-1&scaling=contain&content-scaling=fixed&page-id=12%3A2&starting-point-node-id=34%3A1168)
+
+![WireframesWeb](assets/images/wireframes_mobile.png)
+
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+Durante o desenvolvimento deste projeto, adotamos o framework Scrum, designando Arthur Lacorte como Scrum Master e Victor Torres como Product Owner (PO) para facilitar a organização e a eficiência do time. Essa estrutura nos permitiu dividir as tarefas de maneira estratégica, levando em consideração as habilidades específicas de cada desenvolvedor — Adrielly Lima, Arthur Lacorte, Arthur Moura, Guilherme Coelho, Victor Torres e Victor Wilson — e priorizando entregas de forma ágil e contínua. A documentação do projeto foi realizada por toda a equipe, assegurando que cada etapa do processo estivesse devidamente registrada e acessível a todos.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Além disso, utilizamos o método Kanban para acompanhar o progresso das atividades, organizando nosso fluxo de trabalho em três quadros: um para tarefas não começadas, um para tarefas em andamento e um para tarefas concluídas. Essa abordagem se mostrou extremamente útil para a designação correta das tarefas e para a organização geral do projeto, proporcionando uma visão clara sobre ações pendentes e concluídas, garantindo transparência e coordenação entre os membros da equipe.
 
-**Links Úteis**:
+Empregamos a plataforma Miro para estruturar nossas atividades de Design Thinking, o que foi fundamental para aprofundar nossa compreensão do projeto e identificar oportunidades de melhorias. O Figma foi a plataforma escolhida para elaborar os fluxos de usuário, wireframes das telas e o protótipo interativo, assegurando uma experiência de usuário bem estruturada e coerente com os objetivos do projeto. Além disso, utilizamos o GitHub como repositório de código, permitindo um controle eficiente de versionamento e garantindo que todo o processo estivesse devidamente documentado.
 
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- [Figma - Wireframes das telas e protótipo interativo](https://www.figma.com)
+- [Miro - Ferramenta para etapa do Design Thinking](https://miro.com/pt/)
+- [GitHub - Repositório de Código e Documentação](https://github.com)
+
+
