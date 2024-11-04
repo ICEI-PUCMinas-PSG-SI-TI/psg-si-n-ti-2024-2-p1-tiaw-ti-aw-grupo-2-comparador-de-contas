@@ -56,6 +56,7 @@ $(document).ready(function () {
             $('#divHoras').hide();
             $('#divMinutos').hide();
             $('#divTamanho').show();
+            
         }
         else if (valorSelecionado === 'chuveiro') {
             $('#divUsoDiario').show();
@@ -125,7 +126,7 @@ $(document).ready(function () {
             const quantidade = $('#quantidade').val().trim();
             const usoDiario = $('#usoDiario').val().trim();
             const tempoMin = $('#tempoMin').val().trim();
-            if (quantidade && tamanhoItem && tempoMin) {
+            if (quantidade && usoDiario && tempoMin) {
                 equipamentos.chuveiro.quantidade = quantidade;
                 equipamentos.chuveiro.usoDiario = usoDiario;
                 equipamentos.chuveiro.minutos = tempoMin;
@@ -216,91 +217,112 @@ $(document).ready(function () {
     const dados = JSON.parse(localStorage.getItem('equipamentosSalvosLocal'));
     console.log(dados)
 
+    // Função para calcular consumo de água
     function calculaConsumoRealAgua(obj) {
         const { chuveiro, maquina, vaso } = obj
 
+        // Função para calcular o volume de água da máquina de lavar dependendo do tamanho inserido
         function validaTamanhoMaquina(tamanho) {
             let tamanhoReal;
             if (tamanho === "p") {
-                return tamanhoReal = 135;
-            } else if (tamanho === "m") {
-                return tamanhoReal = 168;
+                return tamanhoReal = 135; // Lavadoras de até 10 kg
+            } else if (tamanho === "m") { 
+                return tamanhoReal = 168; // Lavadoras de 11 á 12 kg
             } else {
-                return tamanhoReal = 197;
-            }
+                return tamanhoReal = 197; // Lavadoras de até 17 kg
+            } 
         }
 
-        const calculoChuveiro = chuveiro?.quantidade * chuveiro?.usoDiario * chuveiro?.minutos * 4.2 * 30;
-        const calculoMaquina = maquina?.quantidade * maquina?.usoSemanal * validaTamanhoMaquina(maquina?.tamanho) * 4;
-        const calculoVaso = vaso?.quantidade * vaso?.usoDiario * 72;
-        // console.log(calculoChuveiro)
-        $("#chuveiro_agua_real").css('width', (calculoChuveiro * 100) / 50000 + "%")
-        $("chuveiro_agua_real_valor").text(calculoChuveiro + "L")
+        // Cálculos dos consumos
+        // Consumo de água do chuveiro (L/mês) = (Volume por hora (L/h) * ((número de banhos * tempo do banho em minutos)/60) * 30) * quantidade na residência
+        const calculoChuveiro = (540 * ((chuveiro?.usoDiario * chuveiro?.minutos)/60) * 30) * chuveiro?.quantidade;
 
-        $("#maquina_real").css('width', (calculoMaquina * 100 / 100000 + "%"))
-        $("#maquina_real_valor").text(calculoMaquina + "L")
+        // Consumo de água da máquina de lavar (L/mês) = ((Volume por tamanho (L/por ciclo) * número de lavagens por semana) * 4) * quantidade na residência
+        const calculoMaquina = ((validaTamanhoMaquina(maquina?.tamanho) * maquina?.usoSemanal) * 4) * maquina?.quantidade;
 
-        $("#vaso_real").css('width', (calculoVaso * 100 / 10000 + "%"))
-        $("#vaso_real_valor").text(calculoVaso + "L")
+        // Consumo de água do vaso sanitário (L/mês) = ((Volume por uso (L/por descarga) * número de uso por dia) * 30) * quantidade na residência
+        const calculoVaso = ((12 * vaso?.usoDiario) * 30) * vaso?.quantidade;
+
+        console.log(calculoChuveiro)
+        console.log(calculoMaquina)
+        console.log(calculoVaso)
+
+        // Atualiza barra de progresso para cada tipo de consumo
+        $("#chuveiro_agua_real").css('width', (calculoChuveiro * 100) / 20000 + "%");
+        $("#chuveiro_agua_real_valor").text(calculoChuveiro + " L");
+
+        $("#maquina_real").css('width', (calculoMaquina * 100) / 20000 + "%");
+        $("#maquina_real_valor").text(calculoMaquina + " L");
+
+        $("#vaso_real").css('width', (calculoVaso * 100) / 20000 + "%");
+        $("#vaso_real_valor").text(calculoVaso + " L");
+
+        // Cálculo do consumo real
+        const consumoTotal = (calculoChuveiro + calculoMaquina + calculoVaso).toFixed(2);
+        $("#consumoRealAgua").text(consumoTotal + " L");
+        
     }
 
-    if (!dados) {
-        $("chuveiro_agua_real_valor").text("Insira valores para realizar o cálculo")
-        $("#chuveiro_agua_real").css("width", "100%")
-
-        $("#maquina_real_valor").text("Insira valores para realizar o cálculo")
-        $("#maquina_real").css("width", "100%")
-
-        $("#vaso_real_valor").text("Insira valores para realizar o cálculo")
-        $("#vaso_real").css("width", "100%")
-        return
-    } else {
-        calculaConsumoRealAgua(dados)
-    }
-
-
-
-
+    // Função para calcular consumo de energia
     function calculaConsumoRealEnergia(obj) {
-        const { chuveiro, geladeira, ar, tv, pc } = obj
+        const { chuveiro, geladeira, ar, tv, pc } = obj;
 
+        // Função para calcular a potência de energia da geladeira dependendo do tamanho inserido
         function validaTamanhoGeladeira(tamanho) {
-            let tamanhoReal;
             if (tamanho === "p") {
-                return tamanhoReal = 135;
+                return 40; // De 100 a 200 litros
             } else if (tamanho === "m") {
-                return tamanhoReal = 168;
+                return 60; // De 200 e 400 litros
             } else {
-                return tamanhoReal = 197;
+                return 80; // Mais de 400 litros
             }
         }
 
-        const calculoChuveiro = chuveiro?.quantidade * chuveiro?.usoDiario * chuveiro?.minutos * 4.2 * 30;
-        const calculoMaquina = maquina?.quantidade * maquina?.usoSemanal * validaTamanhoMaquina(maquina?.tamanho) * 4;
-        const calculoVaso = vaso?.quantidade * vaso?.usoDiario * 72;
-        // console.log(calculoChuveiro)
-        $("#chuveiro_agua_real").css('width', (calculoChuveiro * 100) / 50000 + "%")
-        $("chuveiro_agua_real_valor").text(calculoChuveiro + "L")
+        // Consumo de energia do chuveiro (kWh/mês) = (((Potência por hora (W/h) * ((número de banhos * tempo do banho em minutos)/60)) * 30) / 1000) * quantidade na residência
+        const calculoChuveiro = (((5400 * ((chuveiro?.usoDiario * chuveiro?.minutos)/60)) * 30) / 1000 ) * chuveiro?.quantidade;
+        
+        // Consumo de energia da geladeira (kWh/mês) = Potência por tamanho (kWh/mês) * quantidade na residência
+        const calculoGeladeira = validaTamanhoGeladeira(geladeira?.tamanho) * geladeira?.quantidade;
 
-        $("#maquina_real").css('width', (calculoMaquina * 100 / 100000 + "%"))
-        $("#maquina_real_valor").text(calculoMaquina + "L")
+        // Consumo de energia do ar-condicionado (kWh/mês) = (((Potência por hora (W/h) * tempo de uso em horas) * 30) / 1000) * quantidade na residência
+        const calculoAr = (((1450 * ar?.horas) * 30) / 1000) * ar?.quantidade; // 12.000 BTUs = 1.450 W
 
-        $("#vaso_real").css('width', (calculoVaso * 100 / 10000 + "%"))
-        $("#vaso_real_valor").text(calculoVaso + "L")
+        // Consumo de energia da TV (kWh/mês) = (((Potência por hora (W/h) * (número de usos por semana * tempo de uso em  hora)) * 4) / 1000) * quantidade na residência
+        const calculoTV = (((39 * (tv?.usoSemanal * tv?.horas)) * 4) / 1000 ) * tv?.quantidade; // TV 32 Polegadas =  39 W
+        
+        // Consumo de energia da PC (kWh/mês) = (((Potência por hora (W/h) * (número de usos por semana * tempo de uso em  hora)) * 4) / 1000) * quantidade na residência
+        const calculoPC = (((300 * (pc?.usoSemanal * pc?.horas)) * 4) / 1000 ) * pc?.quantidade; // Microcomputador = 300 W
+
+
+        console.log(calculoChuveiro)
+        console.log(calculoGeladeira)
+        console.log(calculoAr)
+        console.log(calculoTV)
+        console.log(calculoPC)
+
+        // Atualiza barra de progresso para cada tipo de consumo
+        $("#chuveiro_energia_real").css('width', (calculoChuveiro * 100) / 2000 + "%");
+        $("#chuveiro_energia_real_valor").text(calculoChuveiro + " kWh");
+
+        $("#geladeira_real").css('width', (calculoGeladeira * 100) / 2000 + "%");
+        $("#geladeira_real_valor").text(calculoGeladeira + " kWh");
+
+        $("#ar_real").css('width', (calculoAr * 100) / 2000 + "%");
+        $("#ar_real_valor").text(calculoAr + " kWh");
+
+        $("#tv_real").css('width', (calculoTV * 100) / 2000 + "%");
+        $("#tv_real_valor").text(calculoTV + " kWh");
+
+        $("#pc_real").css('width', (calculoPC * 100) / 2000 + "%");
+        $("#pc_real_valor").text(calculoPC + " kWh");
+
+
+        // Cálculo do consumo real
+        const consumoTotal = (calculoChuveiro + calculoGeladeira + calculoAr + calculoTV + calculoPC).toFixed(2);
+        $("#consumoRealEnergia").text(consumoTotal + " kWh");
     }
 
-    if (!dados) {
-        $("chuveiro_agua_real_valor").text("Insira valores para realizar o cálculo")
-        $("#chuveiro_agua_real").css("width", "100%")
-
-        $("#maquina_real_valor").text("Insira valores para realizar o cálculo")
-        $("#maquina_real").css("width", "100%")
-
-        $("#vaso_real_valor").text("Insira valores para realizar o cálculo")
-        $("#vaso_real").css("width", "100%")
-        return
-    } else {
-        calculaConsumoRealAgua(dados)
-    }   
+    calculaConsumoRealAgua(dados);
+    calculaConsumoRealEnergia(dados);
 
 });
