@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContGast - Lançamentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body class="min-vh-100 bg-light">
+    <div class="container-fluid p-0 mx-auto my-auto p-lg-4 h-100 w-100 m-0">
+        <!-- Navbar mobile-->
+        <div class="row mx-auto d-lg-none">
+            <div class="col-12 d-flex justify-content-between align-items-center mt-2 p-2">
+                <div class="dropdown text-start">
+                    <button class="bg-transparent border-0" type="button" id="dropdownProfile" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/profilePlaceholder.png" alt="Profile Picture" class="img-fluid border rounded-circle" id="profile-img">  
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                        <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                        <li><a class="dropdown-item" href="#">Feedback</a></li>
+                    </ul>
+                </div>                                 
+                <div class="image-container text-center d-inline-block">
+                    <img src="../assets/images/LogoContGast.png" class="img-fluid" alt="Logo" id="logo">
+                </div>                
+                <div class="dropdown text-end">
+                    <button class="bg-transparent border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="visaogeral.html">Visão Geral</a></li>
+                        <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                        <li><a class="dropdown-item" href="lancamentos.html">Lançamentos</a></li>
+                        <li><a class="dropdown-item" href="#">Simulação</a></li>
+                        <li><a class="dropdown-item" href="#">Previsões</a></li>
+                        <li><a class="dropdown-item" href="#">Dicas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!-- Sidebar + Navbar Web-->
+        <div class="row mx-auto d-flex h-100">
+            <div class="p-3 col-3 d-none d-lg-flex flex-column text-center shadow-lg">
+                <div class="mt-2 image-container text-center mt-5">
+                    <img src="../assets/images/LogoContGast.png" class="img-fluid" alt="Logo" id="logo">
+                </div>
+                <div class="mt-4">
+                    <img src="../assets/images/profilePlaceholder.png   " alt="Profile Picture" class="img-fluid border rounded-circle" id="profile-img">
+                    <p>Arthur Lacorte</p>
+                </div>
+                <div class="bg-secondary bg-opacity-50 mx-auto px-3 rounded mt-3">
+                    <p class="m-0">O seu status atual é: <br/>Muito bom!</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-check text-success" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                    </svg>
+                </div>
+                <a href="https://icons.getbootstrap.com/icons/check/" class="mt-2">Ver mais</a>
+                <ul class="list-group mt-3 mx-auto" id="sideList">
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg> Configurações</li>
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                    </svg> Ajuda</li>
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16">
+                        <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                    </svg> Feedback</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-9 content-col m-0 p-0 h-100 bg-secondary bg-opacity-25" id="mainContent">
+                <div class="row mx-auto">
+                    <div class="col-12 d-none d-lg-flex align-items-center p-0 bg-light border-bottom border-dark" id="navWeb">
+                        <ul class="list-inline d-flex justify-content-between p-0 mt-3 flex-grow-1">
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="visaogeral.html" class=" text-decoration-none">Visão Geral</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Relatórios</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none border-bottom border-secondary">Lançamentos</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Simulação</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Previsões</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Dicas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="m-2 mt-5 m-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="navIcon" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                            <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                        </svg>
+                        <div class="ms-2 text-start"> 
+                            <h3 class="m-0">Lançamentos</h3>
+                            <p>
+                                Registre suas informações relativas ao consumo de água e energia elétrica.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="border border-secondary border-opacity-50 d-block mx-auto" id="border"></span>
+                </div>
+                <!-- row com conteúdo principal (Funcionalidade de cada tela)-->                           
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-10 col-lg-6 mt-2 mt-lg-3 bg-light rounded" id="main">
+                        <div id="formCadastro" class="text-center col-12">
+                            <h5 class="mt-5 mb-3 text-center">Cadastre seus equipamentos</h5>
+                            <form action="#" class="justify-content-center">
+                                <div class="mb-3">
+                                    <label for="cadastroInicial" class="form-label fw-bold">Equipamento:</label>
+                                    <select id="cadastroInicial" name="cadastroInicial" class="form-select w-50 mx-auto text-center border border-dark">
+                                        <option value="selecionar">Selecione uma opção</option>
+                                        <option value="chuveiro">Chuveiro Elétrico</option>
+                                        <option value="ar">Ar-condicionado</option>
+                                        <option value="maquina">Máquina de Lavar</option>
+                                        <option value="geladeira">Geladeira</option>
+                                        <option value="tv">Televisão</option>
+                                        <option value="pc">Computador</option>
+                                        <option value="vaso">Vaso Sanitário</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3" id="divQuantidade">
+                                    <label for="quantidade" class="form-label fw-bold">Quantidade em sua residência:</label>
+                                    <input type="text" id="quantidade" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3" id="divUsoDiario">
+                                    <label for="usoDiario" class="form-label fw-bold">Usos por dia:</label>
+                                    <input type="text" id="usoDiario" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3" id="divUsoSemanal">
+                                    <label for="usoSemanal" class="form-label fw-bold">Usos por semana:</label>
+                                    <input type="text" id="usoSemanal" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3" id="divMinutos">
+                                    <label for="tempoMin" class="form-label fw-bold">Tempo de uso por dia (minutos):</label>
+                                    <input type="text" id="tempoMin" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3" id="divHoras">
+                                    <label for="tempoHoras" class="form-label fw-bold">Tempo de uso por dia (horas):</label>
+                                    <input type="text" id="tempoHoras" placeholder="Digite aqui" class="form-control w-50 mx-auto text-center border border-dark">
+                                </div>
+                                <div class="mb-3" id="divTamanho">
+                                    <label for="tamanhoItem" class="form-label fw-bold">Tamanho:</label>
+                                    <select id="tamanhoItem" name="tamanhoItem" class="form-select w-50 mx-auto text-center border border-dark">
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="p">Pequena</option>
+                                        <option value="m">Média</option>
+                                        <option value="g">Grande</option>
+                                    </select>
+                                </div>
+                                <!-- Botão de salvar -->
+                                <button type="submit" class="btn btn-primary mt-3" id="salvarInicial">Salvar</button>
+                            </form>
+                        </div>
+                        <!-- Botão editar equipamentos cadastros -->
+                        <div class="text-center mt-3">
+                            <!-- <button type="button" class="btn border border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Editar equipamentos cadastrados
+                            </button> -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5 p-0" id="exampleModalLabel">Equipamentos Cadastrados</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item text-start dropdown">Chuveiro Elétrico
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeChuveiro" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeAr" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="tempoUsoChuveiro" class="form-label fw-bold me-2 mb-0">Tempo de uso por dia (min):</label>
+                                                                    <input type="text" id="tempoUsoAr" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Ar-condicionado
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeAr" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeAr" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="tempoUsoAr" class="form-label fw-bold me-2 mb-0">Tempo de uso por dia (h):</label>
+                                                                    <input type="text" id="tempoUsoAr" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Máquina de Lavar
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeMaquina" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeMaquina" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoSemanalMaquina" class="form-label fw-bold me-2 mb-0">Usos por semana:</label>
+                                                                    <input type="text" id="usoSemanalMaquina" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Geladeira
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeGeladeira" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeGeladeira" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiarioGeladeira" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiarioGeladeira" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Televisão
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeTelevisao" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeTelevisao" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="tempoUsoTelevisao" class="form-label fw-bold me-2 mb-0">Tempo de uso(min):</label>
+                                                                    <input type="text" id="tempoUsoTelevisao" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Computador
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadePc" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadePc" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="tempoUsoPc" class="form-label fw-bold me-2 mb-0">Tempo de uso(min):</label>
+                                                                    <input type="text" id="tempoUsoPc" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                            <li class="list-group-item text-start dropdown">Vaso Sanitário
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split border-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                </button>
+                                                    <ul class="dropdown-menu border border-dark ps-2">
+                                                        <li>
+                                                            <form action="#">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="quantidadeVaso" class="form-label fw-bold me-2 mb-0">Quantidade:</label>
+                                                                    <input type="text" id="quantidadeVaso" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label for="usoDiarioVaso" class="form-label fw-bold me-2 mb-0">Usos por dia:</label>
+                                                                    <input type="text" id="usoDiarioVaso" placeholder="0" class="form-control w-25 border-0">
+                                                                </div>
+                                                            </form>
+                                                        </li>  
+                                                    </ul>
+                                              </button>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
