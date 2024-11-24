@@ -167,6 +167,35 @@
                                             <button class="btn btn-warning">Regular</button>
                                         </div>
                                     </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroAgua"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+
+                                    <div class="modal fade" id="modalDinheiroAgua" tabindex="-1" aria-labelledby="modalDinheiroAguaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroAguaLabel">Valor do consumo em reais</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de água, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ R$ 85,25</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealAguaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <div class="consumo d-flex">
                                         <div class="mb-0 me-4">
                                             <p>Consumo esperado</p>
@@ -177,8 +206,9 @@
                                             <span id="consumoRealAgua" class="badge bg-warning" style="margin-left: 20px;"></span>
                                         </div>
                                     </div>
+
                                 </div><br>
-                    
+                
                                 <!-- Consumo Água -->
                                 <!-- Chuveiro -->
                                 <div class="mb-4">
@@ -257,6 +287,34 @@
                                             <button class="btn btn-warning">Regular</button>
                                         </div>
                                     </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroEnergia"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+                                    
+                                    <div class="modal fade" id="modalDinheiroEnergia" tabindex="-1" aria-labelledby="modalDinheiroEnergiaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroEnergiaLabel">Valor do consumo em reais</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de energia, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ 430,52</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealEnergiaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="consumo d-flex">
                                         <div class="mb-0 me-4">
                                             <p>Consumo esperado</p>
@@ -267,7 +325,7 @@
                                             <span id="consumoRealEnergia" class="badge bg-warning" style="margin-left: 20px;"></span>
                                         </div>
                                     </div>
-                                    
+
                                 </div><br>
                     
                                 <!-- Consumo Energia -->
