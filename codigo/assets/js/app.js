@@ -261,8 +261,33 @@ $(document).ready(function () {
         // Cálculo do consumo real
         const consumoTotal = (calculoChuveiro + calculoMaquina + calculoVaso).toFixed(2);
         $("#consumoRealAgua").text(consumoTotal + " L");
-        
-    }
+
+        // Cálculo do valor da conta em reais
+        // Cálculo do valor total em reais: Tarifa Fixa + Tarifa Variável (Calculada com base no consumo, de acordo com os valores da tabela de volume)
+        const consumoTotalM3 = consumoTotal / 1000;
+        const valorTarifaFixa = 21.23; // Tarifa fixa
+        let valorTotal = valorTarifaFixa;
+
+        // As tarifas utilizadas no cálculo foram baseadas nas informações disponíveis no site oficial da Copasa
+        // https://copasaportalprd.azurewebsites.net/Copasa.Portal/Services/TariffEvolution
+        // Os dados considerados são das tarifas residenciais de 2023
+
+        if (consumoTotalM3 <= 5) {
+            valorTotal += consumoTotalM3 * 2.20;
+        } else if (consumoTotalM3 <= 10) {
+            valorTotal += (5 * 2.20) + ((consumoTotalM3 - 5) * 4.685);
+        } else if (consumoTotalM3 <= 15) {
+            valorTotal += (5 * 2.20) + (5 * 4.685) + ((consumoTotalM3 - 10) * 7.260);
+        } else if (consumoTotalM3 <= 20) {
+            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + ((consumoTotalM3 - 15) * 9.911);
+        } else if (consumoTotalM3 <= 40) {
+            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + (5 * 9.911) + ((consumoTotalM3 - 20) * 12.607);
+        } else {
+            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + (5 * 9.911) + (20 * 12.607) + ((consumoTotalM3 - 40) * 15.381);
+        }
+
+        $("#consumoRealAguaValor").text("R$ " + valorTotal.toFixed(2));
+        }
 
     // Função para calcular consumo de energia
     function calculaConsumoRealEnergia(obj) {
@@ -321,6 +346,18 @@ $(document).ready(function () {
         // Cálculo do consumo real
         const consumoTotal = (calculoChuveiro + calculoGeladeira + calculoAr + calculoTV + calculoPC).toFixed(2);
         $("#consumoRealEnergia").text(consumoTotal + " kWh");
+
+        // Cálculo do valor total em reais: A Cemig aplica tarifas para consumidores residenciais com base em diferentes bandeiras tarifárias
+        // No código, definimos a tarifa da bandeira vermelha como padrão, considerando-a como uma média para os cálculos
+        const precoKwh = 0.84432; // Tarifa da bandeira vermelha 1
+
+        // As tarifas utilizadas no cálculo foram baseadas nas informações disponíveis no site oficial da Cemig
+        // https://www.cemig.com.br/atendimento/valores-de-tarifas-e-servicos/
+        // Os dados considerados são "Tarifas do Grupo B – (Antes de IMPOSTOS)" para a categoria "B1 - RESIDENCIAL NORMAL"
+
+        let valorTotal = (consumoTotal * precoKwh);
+        $("#consumoRealEnergiaValor").text("R$ " + valorTotal.toFixed(2));
+        
     }
 
     calculaConsumoRealAgua(dados);
@@ -385,3 +422,4 @@ $(document).ready(function () {
 
 
 });
+

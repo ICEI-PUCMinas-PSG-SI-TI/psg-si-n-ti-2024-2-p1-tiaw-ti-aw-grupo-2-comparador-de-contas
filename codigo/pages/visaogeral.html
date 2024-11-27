@@ -136,7 +136,8 @@
                 <!-- row com conteúdo principal (Funcionalidade de cada tela)-->
                 <div class="row mx-auto justify-content-center">
                     <div class="container m-3" style="margin-top: -2%;">
-                        <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs abasAguaEnergia" id="myTab" role="tablist">
+
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="agua-tab" data-bs-toggle="tab" data-bs-target="#agua" type="button" role="tab" aria-controls="agua" aria-selected="true">Água</button>
                             </li>
@@ -159,6 +160,35 @@
                                             <button class="btn btn-warning">Regular</button>
                                         </div>
                                     </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroAgua"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+
+                                    <div class="modal fade" id="modalDinheiroAgua" tabindex="-1" aria-labelledby="modalDinheiroAguaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroAguaLabel">Valor do consumo em reais</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de água, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ R$ 85,25</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealAguaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <div class="consumo d-flex">
                                         <div class="mb-0 me-4">
                                             <p>Consumo esperado</p>
@@ -169,22 +199,26 @@
                                             <span id="consumoRealAgua" class="badge bg-warning" style="margin-left: 20px;"></span>
                                         </div>
                                     </div>
+
                                 </div>
-                                <br>
-                
+                                <br>              
                                 <!-- Consumo Água -->
                                 <!-- Chuveiro -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-shower"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">8.100 L / 20.000 L</p>
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">8.100 L / 20.000 L</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="chuveiro_agua_real_valor" class="progress-text"> / 20.000 L</p>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="chuveiro_agua_real_valor" class="descricao-progresso"> / 20.000 L</p>
                                             <div class="progress mb-2">
                                                 <div id="chuveiro_agua_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -195,15 +229,19 @@
                                 <!-- Máquina de lavar -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-shirt"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">2.016 L / 20.000 L</p>
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-shirt"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">2.016 L / 20.000 L</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="maquina_real_valor" class="progress-text"> / 20.000 L</p>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="maquina_real_valor" class="descricao-progresso"> / 20.000 L</p>
                                             <div class="progress mb-2">
                                                 <div id="maquina_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -214,15 +252,20 @@
                                 <!-- Vaso sanitário -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-toilet"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">3.960 L / 20.000 L</p>
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-toilet"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">3.960 L / 20.000 L</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 20%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="vaso_real_valor" class="progress-text"> / 20.000 L</p>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="vaso_real_valor" class="descricao-progresso"> / 20.000 L</p>
+
                                             <div class="progress mb-2">
                                                 <div id="vaso_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -244,6 +287,34 @@
                                             <button class="btn btn-warning">Regular</button>
                                         </div>
                                     </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroEnergia"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+                                    
+                                    <div class="modal fade" id="modalDinheiroEnergia" tabindex="-1" aria-labelledby="modalDinheiroEnergiaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroEnergiaLabel">Valor do consumo em reais</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de energia, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ 430,52</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealEnergiaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="consumo d-flex">
                                         <div class="mb-0 me-4">
                                             <p>Consumo esperado</p>
@@ -254,22 +325,25 @@
                                             <span id="consumoRealEnergia" class="badge bg-warning" style="margin-left: 20px;"></span>
                                         </div>
                                     </div>
+
                                 </div>
                                 <br>
-                
+
                                 <!-- Consumo Energia -->
                                 <!-- Ar-condicionado -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-fan"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">200 kWh / 500 kWh</p>
+                                        <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">81 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="ar_cond_real_valor" class="progress-text"> / 500 kWh</p>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="chuveiro_energia_real_valor" class="descricao-progresso"> / 2000 kWh</p>
                                             <div class="progress mb-2">
                                                 <div id="ar_cond_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -280,15 +354,20 @@
                                 <!-- Geladeira -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-snowflake"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">150 kWh / 300 kWh</p>
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-snowflake"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">60 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 50%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="geladeira_real_valor" class="progress-text"> / 300 kWh</p>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="geladeira_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+
                                             <div class="progress mb-2">
                                                 <div id="geladeira_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -299,17 +378,62 @@
                                 <!-- Iluminação -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-lightbulb"></i></span>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">50 kWh / 200 kWh</p>
+                                        <span class="icon-circulo"><i class="fa-solid fa-wind"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">348 kWh / 2000 kWh</p>
+
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"></div>
                                             </div>
                                         </div>
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="iluminacao_real_valor" class="progress-text"> / 200 kWh</p>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="ar_real_valor" class="descricao-progresso"> / 2000 kWh</p>
                                             <div class="progress mb-2">
-                                                <div id="iluminacao_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                                <div id="ar_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TV -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-tv"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">4 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 0.2%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="tv_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="tv_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PC -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-laptop"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">16 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 0.8%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="pc_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="pc_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
                                         </div>
                                     </div>
