@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     //Declaração de variáveis
     var valorSelecionado;
+    
 
     //Declaração de objetos
     const equipamentos = {
@@ -361,6 +362,64 @@ $(document).ready(function () {
 
     calculaConsumoRealAgua(dados);
     calculaConsumoRealEnergia(dados);
+
+    //Função para exibir relatório
+
+    $('#gerarRelatorio').click(function () {
+
+        $('#exibirRelatorio').removeClass('d-none');
+        $('#exibirRelatorio').addClass('d-block')
+        
+        let equipamentosSalvos = JSON.parse(localStorage.getItem('equipamentosSalvosLocal')) || {};
+    
+        let equipamentoSelecionado = $('#relatorioEquipamento').val();
+    
+        if (equipamentoSelecionado === "selecionar") {
+            $('#exibirRelatorio').html("<strong>Por favor, selecione um equipamento para gerar o relatório.</strong>");
+            return;
+        }
+    
+        let equipamento = equipamentosSalvos[equipamentoSelecionado];
+    
+        if (!equipamento) {
+            $('#exibirRelatorio').html(`<strong>O equipamento "${equipamentoSelecionado}" não possui dados salvos no momento.</strong>`);
+            return;
+        }
+
+        let htmlContent = `<strong>Relatório do Equipamento:</strong><br>`;
+        switch (equipamentoSelecionado) {
+            case "chuveiro":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} chuveiro(s) em sua casa, utilizado(s) ${equipamento.usoDiario || "0"} vezes por dia, por ${equipamento.minutos || "0"} minutos.`;
+                break;
+            case "geladeira":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} geladeira(s) com tamanho de ${equipamento.tamanho || "não especificado"}.`;
+                break;
+            case "maquina":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} máquina(s) de lavar, utilizada(s) ${equipamento.usoSemanal || "0"} vezes por semana, com tamanho ${equipamento.tamanho || "não especificado"}.`;
+                break;
+            case "ar":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} ar-condicionado(s), utilizado(s) por ${equipamento.horas || "0"} horas por dia.`;
+                break;
+            case "tv":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} TV(s), utilizada(s) ${equipamento.usoSemanal || "0"} vezes por semana, por ${equipamento.horas || "0"} horas.`;
+                break;
+            case "pc":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} computador(es), utilizado(s) ${equipamento.usoSemanal || "0"} vezes por semana, por ${equipamento.horas || "0"} horas.`;
+                break;
+            case "vaso":
+                htmlContent += `Você possui ${equipamento.quantidade || "0"} vaso(s) sanitário(s), utilizado(s) ${equipamento.usoDiario || "0"} vezes por dia.`;
+                break;
+            default:
+                htmlContent += `Não há informações disponíveis para este equipamento.`;
+        }
+
+        console.log($('#exibirRelatorio').attr('class')); // Verifica as classes aplicadas
+        $('#exibirRelatorio').html(htmlContent);
+    });
+    
+    
+    
+
 
 });
 

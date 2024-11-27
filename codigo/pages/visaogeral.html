@@ -43,7 +43,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="visaogeral.html">Visão Geral</a></li>
-                        <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                        <li><a class="dropdown-item" href="relatorios.html">Relatórios</a></li>
                         <li><a class="dropdown-item" href="lancamentos.html">Lançamentos</a></li>
                         <li><a class="dropdown-item" href="#">Simulação</a></li>
                         <li><a class="dropdown-item" href="#">Previsões</a></li>
@@ -98,14 +98,14 @@
                         id="navWeb">
                         <ul class="list-inline d-flex justify-content-between p-0 mt-3 flex-grow-1">
                             <li class="list-inline-item flex-fill text-center">
-                                <a href="visaogeral.html" class=" text-decoration-none">Visão Geral</a>
+                                <a href="visaogeral.html" class=" text-decoration-none border-bottom border-secondary">Visão Geral</a>
                             </li>
                             <li class="list-inline-item flex-fill text-center">
-                                <a href="#" class=" text-decoration-none">Relatórios</a>
+                                <a href="relatorios.html" class=" text-decoration-none">Relatórios</a>
                             </li>
                             <li class="list-inline-item flex-fill text-center">
                                 <a href="lancamentos.html"
-                                    class=" text-decoration-none border-bottom border-secondary">Lançamentos</a>
+                                    class=" text-decoration-none ">Lançamentos</a>
                             </li>
                             <li class="list-inline-item flex-fill text-center">
                                 <a href="#" class=" text-decoration-none">Simulação</a>
@@ -119,41 +119,34 @@
                         </ul>
                     </div>
                 </div>
-                <!-- row com conteúdo principal (Funcionalidade de cada tela)-->
                 <div class="row mx-auto">
-                    <div
-                        class="m-2 mt-5 m-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" class="bi bi-search"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zm-5.442 1.1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    <div class="m-2 mt-5 m-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="navIcon   bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
-                        <div class="ms-2 text-start">
-                            <h3 class="m-0">Visão geral</h3>
+                        <div class="ms-2 text-start"> 
+                            <h3 class="m-0">Visão Geral</h3>
                             <p>
-                                Confira a situação atual dos seus gastos.
+                                Veja sua situação atual em relação aos seus gastos
                             </p>
                         </div>
                     </div>
+                    <span class="border border-secondary border-opacity-50 d-block mx-auto" id="border"></span>
                 </div>
-                <div class="container" style="margin-top: -2%;">
-
-                    <div class="container">
+                <!-- row com conteúdo principal (Funcionalidade de cada tela)-->
+                <div class="row mx-auto justify-content-center">
+                    <div class="container m-3" style="margin-top: -2%;">
                         <ul class="nav nav-tabs abasAguaEnergia" id="myTab" role="tablist">
+
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="agua-tab" data-bs-toggle="tab"
-                                    data-bs-target="#agua" type="button" role="tab" aria-controls="agua"
-                                    aria-selected="true">Água</button>
+                                <button class="nav-link active" id="agua-tab" data-bs-toggle="tab" data-bs-target="#agua" type="button" role="tab" aria-controls="agua" aria-selected="true">Água</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="energia-tab" data-bs-toggle="tab" data-bs-target="#energia"
-                                    type="button" role="tab" aria-controls="energia"
-                                    aria-selected="false">Energia</button>
+                                <button class="nav-link" id="energia-tab" data-bs-toggle="tab" data-bs-target="#energia" type="button" role="tab" aria-controls="energia" aria-selected="false">Energia</button>
                             </li>
-                        </ul>
-                    
+                        </ul> 
                         <!-- Conteúdo das Abas -->
-                        <div class="tab-content mt-3" id="myTabContent">
+                        <div class="tab-content bg-light p-2" id="myTabContent">
                             <!-- Aba "Água" -->
                             <div class="tab-pane fade show active" id="agua" role="tabpanel" aria-labelledby="agua-tab">
                                 <div class="d-flex justify-content-around mb-4">
@@ -207,12 +200,13 @@
                                         </div>
                                     </div>
 
-                                </div><br>
-                
+                                </div>
+                                <br>              
                                 <!-- Consumo Água -->
                                 <!-- Chuveiro -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
+
                                         <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
                                         <!-- Esperado -->
                                         <div class="container-progresso flex-grow-1 ms-3">
@@ -221,6 +215,7 @@
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
                                             </div>
                                         </div>
+
                                         <!-- Real -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p id="chuveiro_agua_real_valor" class="descricao-progresso"> / 20.000 L</p>
@@ -230,10 +225,11 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+                
                                 <!-- Máquina de lavar -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
+
                                         <span class="icon-circulo"><i class="fa-solid fa-shirt"></i></span>
                                         <!-- Esperado -->
                                         <div class="container-progresso flex-grow-1 ms-3">
@@ -242,6 +238,7 @@
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 10%;"></div>
                                             </div>
                                         </div>
+
                                         <!-- Real -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p id="maquina_real_valor" class="descricao-progresso"> / 20.000 L</p>
@@ -251,10 +248,11 @@
                                         </div>
                                     </div>
                                 </div>
-                    
+                
                                 <!-- Vaso sanitário -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
+
                                         <span class="icon-circulo"><i class="fa-solid fa-toilet"></i></span>
                                         <!-- Esperado -->
                                         <div class="container-progresso flex-grow-1 ms-3">
@@ -263,9 +261,11 @@
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 20%;"></div>
                                             </div>
                                         </div>
+
                                         <!-- Real -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p id="vaso_real_valor" class="descricao-progresso"> / 20.000 L</p>
+
                                             <div class="progress mb-2">
                                                 <div id="vaso_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
@@ -273,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                    
+                
                             <!-- Aba "Energia" -->
                             <div class="tab-pane fade" id="energia" role="tabpanel" aria-labelledby="energia-tab">
                                 <div class="d-flex justify-content-around mb-4">
@@ -326,10 +326,11 @@
                                         </div>
                                     </div>
 
-                                </div><br>
-                    
+                                </div>
+                                <br>
+
                                 <!-- Consumo Energia -->
-                                <!-- Chuveiro -->
+                                <!-- Ar-condicionado -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
                                         <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
@@ -337,49 +338,53 @@
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p class="descricao-progresso">81 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 4.05%;"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
                                             </div>
                                         </div>
                                         <!-- Real -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p id="chuveiro_energia_real_valor" class="descricao-progresso"> / 2000 kWh</p>
                                             <div class="progress mb-2">
-                                                <div id="chuveiro_energia_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                                <div id="ar_cond_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
+                
                                 <!-- Geladeira -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
+
                                         <span class="icon-circulo"><i class="fa-solid fa-snowflake"></i></span>
                                         <!-- Esperado -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p class="descricao-progresso">60 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 3%;"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%;"></div>
                                             </div>
                                         </div>
+
                                         <!-- Real -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p id="geladeira_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+
                                             <div class="progress mb-2">
                                                 <div id="geladeira_real" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- Ar-condicionado -->
+                
+                                <!-- Iluminação -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
                                         <span class="icon-circulo"><i class="fa-solid fa-wind"></i></span>
                                         <!-- Esperado -->
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p class="descricao-progresso">348 kWh / 2000 kWh</p>
+
                                             <div class="progress mb-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 17.4%;"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"></div>
                                             </div>
                                         </div>
                                         <!-- Real -->
@@ -436,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                  
             </div>
         </div>
     </div>
