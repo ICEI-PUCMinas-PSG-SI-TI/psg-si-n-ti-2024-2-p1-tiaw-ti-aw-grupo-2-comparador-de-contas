@@ -1,0 +1,62 @@
+#myTab {
+    border-bottom: 2px solid #919191;
+}
+
+
+.situacao {
+    display: flex;
+    align-items: center;
+}
+
+.consumo {
+    display: flex;
+    align-items: center;
+}
+
+.icon-circulo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555555;
+    border-radius: 50%;
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 35px;
+}
+
+.container-progresso {
+    width: 200px;
+    position: relative;
+}
+
+.descricao-progresso {
+    position: absolute;
+    top: -20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    text-align: center;
+    width: 100%;
+}
+
+.progress {
+    height: 35px;
+}
+
+.icon-dinheiro i {
+    font-size: 36px;
+    color: green;
+    cursor: pointer;
+}
+
+.texto-icon-dinheiro {
+    font-size: 13px; 
+    color: #000; 
+
+}

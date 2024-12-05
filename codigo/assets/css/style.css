@@ -24,7 +24,7 @@ a {
     padding: 15px;
 }
 
-#navIcon{
+.navIcon{
     color: rgb(33, 97, 193);
 }
 
@@ -115,3 +115,4 @@ input:focus, input.form-control:focus {
 .textoBranco{
     color: white;
 }
+
