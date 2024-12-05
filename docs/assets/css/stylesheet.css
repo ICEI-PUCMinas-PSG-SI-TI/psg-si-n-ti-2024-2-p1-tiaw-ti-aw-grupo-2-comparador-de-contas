@@ -2963,3 +2963,12 @@ input:-internal-autofill-selected {
   padding: 5px;
   margin: 0 5px;
 }
+
+.img-web img {
+  width: 80%;
+}
+
+.img-web {
+  display: flex;
+  justify-content: space-between;
+}

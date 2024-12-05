@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContGast - Visão Geral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/styleVisaoGeral.css" rel="stylesheet">
+</head>
+
+<body class="min-vh-100 bg-light">
+    <div class="container-fluid p-0 mx-auto my-auto p-lg-4 h-auto w-100 m-0">
+        <!-- Navbar mobile-->
+        <div class="row mx-auto d-lg-none">
+            <div class="col-12 d-flex justify-content-between align-items-center mt-2 p-2">
+                <div class="dropdown text-start">
+                    <button class="bg-transparent border-0" type="button" id="dropdownProfile" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../assets/images/profilePlaceholder.png" alt="Profile Picture"
+                            class="img-fluid border rounded-circle" id="profile-img">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownProfile">
+                        <li><a class="dropdown-item" href="#">Configurações</a></li>
+                        <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                        <li><a class="dropdown-item" href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="image-container text-center d-inline-block">
+                    <img src="../assets/images/LogoContGast.png" class="img-fluid" alt="Logo" id="logo">
+                </div>
+                <div class="dropdown text-end">
+                    <button class="bg-transparent border-0" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="visaogeral.html">Visão Geral</a></li>
+                        <li><a class="dropdown-item" href="relatorios.html">Relatórios</a></li>
+                        <li><a class="dropdown-item" href="lancamentos.html">Lançamentos</a></li>
+                        <li><a class="dropdown-item" href="#">Simulação</a></li>
+                        <li><a class="dropdown-item" href="#">Previsões</a></li>
+                        <li><a class="dropdown-item" href="#">Dicas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar + Navbar Web-->
+        <div class="row mx-auto d-flex h-100">
+            <div class="p-3 col-3 d-none d-lg-flex flex-column text-center shadow-lg">
+                <div class="mt-2 image-container text-center mt-5">
+                    <img src="../assets/images/LogoContGast.png" class="img-fluid" alt="Logo" id="logo">
+                </div>
+                <div class="mt-4">
+                    <img src="../assets/images/profilePlaceholder.png   " alt="Profile Picture"
+                        class="img-fluid border rounded-circle" id="profile-img">
+                    <p>Arthur Lacorte</p>
+                </div>
+                <div class="bg-secondary bg-opacity-50 mx-auto px-3 rounded mt-3">
+                    <p class="m-0">O seu status atual é: <br />Muito bom!</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-check text-success" viewBox="0 0 16 16">
+                        <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                    </svg>
+                </div>
+                <a href="https://icons.getbootstrap.com/icons/check/" class="mt-2">Ver mais</a>
+                <ul class="list-group mt-3 mx-auto" id="sideList">
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                        </svg> Configurações</li>
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-question-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                        </svg> Ajuda</li>
+                    <li class="bg-light list-group-item text-start border-0"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16">
+                            <path
+                                d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" />
+                        </svg> Feedback</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-9 content-col m-0 p-0 h-100 bg-secondary bg-opacity-25" id="mainContent">
+                <div class="row mx-auto">
+                    <div class="col-12 d-none d-lg-flex align-items-center p-0 bg-light border-bottom border-dark"
+                        id="navWeb">
+                        <ul class="list-inline d-flex justify-content-between p-0 mt-3 flex-grow-1">
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="visaogeral.html" class=" text-decoration-none border-bottom border-secondary">Visão Geral</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="relatorios.html" class=" text-decoration-none">Relatórios</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="lancamentos.html"
+                                    class=" text-decoration-none ">Lançamentos</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Simulação</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Previsões</a>
+                            </li>
+                            <li class="list-inline-item flex-fill text-center">
+                                <a href="#" class=" text-decoration-none">Dicas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="m-2 mt-5 m-lg-5 col-12 d-flex align-items-center justify-content-center justify-content-lg-start text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="navIcon   bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <div class="ms-2 text-start"> 
+                            <h3 class="m-0">Visão Geral</h3>
+                            <p>
+                                Veja sua situação atual em relação aos seus gastos
+                            </p>
+                        </div>
+                    </div>
+                    <span class="border border-secondary border-opacity-50 d-block mx-auto" id="border"></span>
+                </div>
+                <!-- row com conteúdo principal (Funcionalidade de cada tela)-->
+                <div class="row mx-auto justify-content-center">
+                    <div class="container m-3" style="margin-top: -2%;">
+                        <ul class="nav nav-tabs abasAguaEnergia" id="myTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="agua-tab" data-bs-toggle="tab" data-bs-target="#agua" type="button" role="tab" aria-controls="agua" aria-selected="true">Água</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="energia-tab" data-bs-toggle="tab" data-bs-target="#energia" type="button" role="tab" aria-controls="energia" aria-selected="false">Energia</button>
+                            </li>
+                        </ul> 
+                        <!-- Conteúdo das Abas -->
+                        <div class="tab-content bg-light p-2" id="myTabContent">
+                            <!-- Aba "Água" -->
+                            <div class="tab-pane fade show active" id="agua" role="tabpanel" aria-labelledby="agua-tab">
+                                <div class="d-flex justify-content-around mb-4">
+                                    <div class="situacao d-flex justify-content-between">
+                                        <div class="esperada mb-0 me-4">
+                                            <p>Situação esperada</p>
+                                            <button class="btn btn-success" style="margin-left: 30px;">Ótimo</button>
+                                        </div>
+                                        <div class="real mb-0 me-4">
+                                            <p>Situação real</p>
+                                            <button class="btn btn-warning">Regular</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroAgua"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+
+                                    <div class="modal fade" id="modalDinheiroAgua" tabindex="-1" aria-labelledby="modalDinheiroAguaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroAguaLabel">Valor do consumo por mês</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de água, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ R$ 85,25</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealAguaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="consumo d-flex">
+                                        <div class="mb-0 me-4">
+                                            <p>Consumo esperado</p>
+                                            <span class="badge bg-primary" style="margin-left: 35px;">14.076 L</span>
+                                        </div>
+                                        <div>
+                                            <p>Consumo real</p>
+                                            <span id="consumoRealAgua" class="badge bg-warning" style="margin-left: 20px;"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br>              
+                                <!-- Consumo Água -->
+                                <!-- Chuveiro -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">8.100 L / 20.000 L</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="chuveiro_agua_real_valor" class="descricao-progresso"> / 20.000 L</p>
+                                            <div class="progress mb-2">
+                                                <div id="chuveiro_agua_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Máquina de lavar -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-shirt"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">2.016 L / 20.000 L</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 10%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="maquina_real_valor" class="descricao-progresso"> / 20.000 L</p>
+                                            <div class="progress mb-2">
+                                                <div id="maquina_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Vaso sanitário -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-toilet"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">3.960 L / 20.000 L</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="vaso_real_valor" class="descricao-progresso"> / 20.000 L</p>
+
+                                            <div class="progress mb-2">
+                                                <div id="vaso_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Aba "Energia" -->
+                            <div class="tab-pane fade" id="energia" role="tabpanel" aria-labelledby="energia-tab">
+                                <div class="d-flex justify-content-around mb-4">
+                                    <div class="situacao d-flex justify-content-between">
+                                        <div class="esperada mb-0 me-4">
+                                            <p>Situação esperada</p>
+                                            <button class="btn btn-success" style="margin-left: 30px;">Ótimo</button>
+                                        </div>
+                                        <div class="real mb-0 me-4">
+                                            <p>Situação real</p>
+                                            <button class="btn btn-warning">Regular</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal de valores em reais -->
+                                    <div class="text-center icon-dinheiro ms-4 me-4">
+                                        <i class="fa-solid fa-money-bill" data-bs-toggle="modal" data-bs-target="#modalDinheiroEnergia"></i>
+                                        <p class="texto-icon-dinheiro">Consumo em reais</p>
+                                    </div>
+                                    
+                                    <div class="modal fade" id="modalDinheiroEnergia" tabindex="-1" aria-labelledby="modalDinheiroEnergiaLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalDinheiroEnergiaLabel">Valor do consumo por mês</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Veja o total estimado a ser pago na sua conta de energia, com base no consumo esperado e no consumo real.</p>
+                                                    <p><strong>Total esperado a pagar:</strong></p>
+                                                    <p>Valor esperado: R$ 430,52</p>
+                                                    <p><strong>Total real a pagar:</strong></p>
+                                                    <p>Valor real: R$ <span id="consumoRealEnergiaValor"></span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="consumo d-flex">
+                                        <div class="mb-0 me-4">
+                                            <p>Consumo esperado</p>
+                                            <span class="badge bg-primary" style="margin-left: 35px;">509 kWh</span>
+                                        </div>
+                                        <div>
+                                            <p>Consumo real</p>
+                                            <span id="consumoRealEnergia" class="badge bg-warning" style="margin-left: 20px;"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <br>
+
+                                <!-- Consumo Energia -->
+                                <!-- Ar-condicionado -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">81 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 40%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="chuveiro_energia_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="ar_cond_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Geladeira -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-snowflake"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">60 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="geladeira_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+
+                                            <div class="progress mb-2">
+                                                <div id="geladeira_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Iluminação -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-wind"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">348 kWh / 2000 kWh</p>
+
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="ar_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="ar_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TV -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-tv"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">4 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 0.2%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="tv_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="tv_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PC -->
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="icon-circulo"><i class="fa-solid fa-laptop"></i></span>
+                                        <!-- Esperado -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">16 kWh / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 0.8%;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Real -->
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="pc_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+                                            <div class="progress mb-2">
+                                                <div id="pc_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

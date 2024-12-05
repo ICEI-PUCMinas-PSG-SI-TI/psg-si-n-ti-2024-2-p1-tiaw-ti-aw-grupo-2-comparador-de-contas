@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-img{ 
+    max-width: 40px;
+}
+
+#logo{
+    max-width: 120px;
+}   
+
+a {
+    color: black;
+  }
+  
+  a:hover {
+    color: darkgray; 
+}
+
+#sideList li{
+    padding: 15px;
+}
+
+.navIcon{
+    color: rgb(33, 97, 193);
+}
+
+#border{
+    width: 90%;
+}
+
+#main {
+    height: 50vh; /* ocupa 50% da altura da tela */
+}
+
+#formCadastro{
+    font-size: 1rem;
+}
+
+input:focus, input.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+@media (min-width: 992px) {
+    #profile-img{ 
+        max-width: 120px;
+    }  
+}
+
+
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-img{ 
+    max-width: 40px;
+}
+
+#logo{
+    max-width: 120px;
+}   
+
+a {
+    color: black;
+  }
+  
+  a:hover {
+    color: darkgray; 
+}
+
+#sideList li{
+    padding: 15px;
+}
+
+#navIcon{
+    color: rgb(33, 97, 193);
+}
+
+#border{
+    width: 90%;
+}
+
+#main {
+    height: 50vh; /* ocupa 50% da altura da tela */
+}
+
+#formCadastro{
+    font-size: 1rem;
+}
+
+input:focus, input.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+@media (min-width: 992px) {
+    #profile-img{ 
+        max-width: 120px;
+    }  
+}
+
+
+ 
