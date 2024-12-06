@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.icon-circulo {
+.icon-circle {
     width: 40px;
     height: 40px;
     display: flex;
@@ -30,12 +30,12 @@
     height: 35px;
 }
 
-.container-progresso {
+.progress-wrapper {
     width: 200px;
     position: relative;
 }
 
-.descricao-progresso {
+.progress-text {
     position: absolute;
     top: -20px;
     font-size: 14px;
@@ -49,14 +49,6 @@
     height: 35px;
 }
 
-.icon-dinheiro i {
-    font-size: 36px;
-    color: green;
-    cursor: pointer;
-}
-
-.texto-icon-dinheiro {
-    font-size: 13px; 
-    color: #000; 
-
+.botaoEnviarFeedback{
+    text-align: center;
 }
