@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     //Declaração de variáveis
     var valorSelecionado;
-    
 
     //Declaração de objetos
     const equipamentos = {
@@ -261,33 +260,8 @@ $(document).ready(function () {
         // Cálculo do consumo real
         const consumoTotal = (calculoChuveiro + calculoMaquina + calculoVaso).toFixed(2);
         $("#consumoRealAgua").text(consumoTotal + " L");
-
-        // Cálculo do valor da conta em reais
-        // Cálculo do valor total em reais: Tarifa Fixa + Tarifa Variável (Calculada com base no consumo, de acordo com os valores da tabela de volume)
-        const consumoTotalM3 = consumoTotal / 1000;
-        const valorTarifaFixa = 21.23; // Tarifa fixa
-        let valorTotal = valorTarifaFixa;
-
-        // As tarifas utilizadas no cálculo foram baseadas nas informações disponíveis no site oficial da Copasa
-        // https://copasaportalprd.azurewebsites.net/Copasa.Portal/Services/TariffEvolution
-        // Os dados considerados são das tarifas residenciais de 2023
-
-        if (consumoTotalM3 <= 5) {
-            valorTotal += consumoTotalM3 * 2.20;
-        } else if (consumoTotalM3 <= 10) {
-            valorTotal += (5 * 2.20) + ((consumoTotalM3 - 5) * 4.685);
-        } else if (consumoTotalM3 <= 15) {
-            valorTotal += (5 * 2.20) + (5 * 4.685) + ((consumoTotalM3 - 10) * 7.260);
-        } else if (consumoTotalM3 <= 20) {
-            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + ((consumoTotalM3 - 15) * 9.911);
-        } else if (consumoTotalM3 <= 40) {
-            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + (5 * 9.911) + ((consumoTotalM3 - 20) * 12.607);
-        } else {
-            valorTotal += (5 * 2.20) + (5 * 4.685) + (5 * 7.260) + (5 * 9.911) + (20 * 12.607) + ((consumoTotalM3 - 40) * 15.381);
-        }
-
-        $("#consumoRealAguaValor").text("R$ " + valorTotal.toFixed(2));
-        }
+        
+    }
 
     // Função para calcular consumo de energia
     function calculaConsumoRealEnergia(obj) {
@@ -346,80 +320,73 @@ $(document).ready(function () {
         // Cálculo do consumo real
         const consumoTotal = (calculoChuveiro + calculoGeladeira + calculoAr + calculoTV + calculoPC).toFixed(2);
         $("#consumoRealEnergia").text(consumoTotal + " kWh");
-
-        // Cálculo do valor total em reais: A Cemig aplica tarifas para consumidores residenciais com base em diferentes bandeiras tarifárias
-        // No código, definimos a tarifa da bandeira vermelha como padrão, considerando-a como uma média para os cálculos
-        const precoKwh = 0.84432; // Tarifa da bandeira vermelha 1
-
-        // As tarifas utilizadas no cálculo foram baseadas nas informações disponíveis no site oficial da Cemig
-        // https://www.cemig.com.br/atendimento/valores-de-tarifas-e-servicos/
-        // Os dados considerados são "Tarifas do Grupo B – (Antes de IMPOSTOS)" para a categoria "B1 - RESIDENCIAL NORMAL"
-
-        let valorTotal = (consumoTotal * precoKwh);
-        $("#consumoRealEnergiaValor").text("R$ " + valorTotal.toFixed(2));
-        
     }
 
     calculaConsumoRealAgua(dados);
     calculaConsumoRealEnergia(dados);
 
-    //Função para exibir relatório
-
-    $('#gerarRelatorio').click(function () {
-
-        $('#exibirRelatorio').removeClass('d-none');
-        $('#exibirRelatorio').addClass('d-block')
-        
-        let equipamentosSalvos = JSON.parse(localStorage.getItem('equipamentosSalvosLocal')) || {};
-    
-        let equipamentoSelecionado = $('#relatorioEquipamento').val();
-    
-        if (equipamentoSelecionado === "selecionar") {
-            $('#exibirRelatorio').html("<strong>Por favor, selecione um equipamento para gerar o relatório.</strong>");
-            return;
-        }
-    
-        let equipamento = equipamentosSalvos[equipamentoSelecionado];
-    
-        if (!equipamento) {
-            $('#exibirRelatorio').html(`<strong>O equipamento "${equipamentoSelecionado}" não possui dados salvos no momento.</strong>`);
-            return;
-        }
-
-        let htmlContent = `<strong>Relatório do Equipamento:</strong><br>`;
-        switch (equipamentoSelecionado) {
-            case "chuveiro":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} chuveiro(s) em sua casa, utilizado(s) ${equipamento.usoDiario || "0"} vezes por dia, por ${equipamento.minutos || "0"} minutos.`;
-                break;
-            case "geladeira":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} geladeira(s) com tamanho de ${equipamento.tamanho || "não especificado"}.`;
-                break;
-            case "maquina":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} máquina(s) de lavar, utilizada(s) ${equipamento.usoSemanal || "0"} vezes por semana, com tamanho ${equipamento.tamanho || "não especificado"}.`;
-                break;
-            case "ar":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} ar-condicionado(s), utilizado(s) por ${equipamento.horas || "0"} horas por dia.`;
-                break;
-            case "tv":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} TV(s), utilizada(s) ${equipamento.usoSemanal || "0"} vezes por semana, por ${equipamento.horas || "0"} horas.`;
-                break;
-            case "pc":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} computador(es), utilizado(s) ${equipamento.usoSemanal || "0"} vezes por semana, por ${equipamento.horas || "0"} horas.`;
-                break;
-            case "vaso":
-                htmlContent += `Você possui ${equipamento.quantidade || "0"} vaso(s) sanitário(s), utilizado(s) ${equipamento.usoDiario || "0"} vezes por dia.`;
-                break;
-            default:
-                htmlContent += `Não há informações disponíveis para este equipamento.`;
-        }
-
-        console.log($('#exibirRelatorio').attr('class')); // Verifica as classes aplicadas
-        $('#exibirRelatorio').html(htmlContent);
-    });
-    
-    
-    
-
-
 });
 
+// Criando feedback
+document.addEventListener('DOMContentLoaded', function() {
+    const botaoFeedback = document.getElementById('botaoFeedback');
+    const modalFeedback = document.getElementById('modalFeedback');
+    const fecharModal = document.querySelector('.fechar');
+    const botaoEnviarFeedback = document.getElementById('botaoEnviarFeedback');
+    const campoFeedback = document.getElementById('campoFeedback');
+    const listaFeedbacks = document.createElement('ul'); // Cria uma lista para exibir os feedbacks
+    document.body.appendChild(listaFeedbacks); // Adiciona a lista ao body
+
+    // Carrega feedbacks do localStorage ao iniciar
+    carregarFeedbacks();
+
+    // Abre o modal ao clicar no botão
+    botaoFeedback.onclick = function() {
+        modalFeedback.style.display = 'block';
+    }
+
+    // Fecha o modal ao clicar no 'x'
+    fecharModal.onclick = function() {
+        modalFeedback.style.display = 'none';
+    }
+
+    // Fecha o modal ao clicar fora do conteúdo
+    window.onclick = function(event) {
+        if (event.target == modalFeedback) {
+            modalFeedback.style.display = 'none';
+        }
+    }
+
+    // Salva o feedback no localStorage ao clicar no botão "Enviar"
+    botaoEnviarFeedback.onclick = function() {
+        const feedback = campoFeedback.value;
+        if (feedback) {
+            // Recupera os feedbacks existentes ou cria um novo array
+            const feedbacks = JSON.parse(localStorage.getItem('feedbacksUsuario')) || [];
+            feedbacks.push(feedback); // Adiciona o novo feedback ao array
+            localStorage.setItem('feedbacksUsuario', JSON.stringify(feedbacks)); // Salva o array atualizado no localStorage
+            
+            // Adiciona o feedback à lista exibida
+            adicionarFeedbackNaLista(feedback);
+            alert('Feedback enviado com sucesso!');
+            campoFeedback.value = ''; // Limpa a caixa de texto
+            modalFeedback.style.display = 'none'; // Fecha o modal
+        } else {
+            alert('Por favor, digite seu feedback antes de enviar.');
+        }
+    }
+
+    // Função para carregar feedbacks do localStorage e exibi-los
+    function carregarFeedbacks() {
+        const feedbacks = JSON.parse(localStorage.getItem('feedbacksUsuario')) || [];
+        feedbacks.forEach(feedback => {
+            adicionarFeedbackNaLista(feedback);
+        });
+    }
+    // Função para adicionar feedback na lista exibida
+    function adicionarFeedbackNaLista(feedback) {
+        const li = document.createElement('li');
+        li.textContent = feedback;
+        listaFeedbacks.appendChild(li);
+    }
+});
