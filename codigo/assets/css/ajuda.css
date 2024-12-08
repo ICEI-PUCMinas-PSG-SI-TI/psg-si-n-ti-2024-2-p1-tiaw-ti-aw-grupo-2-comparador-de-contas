@@ -1,6 +1,9 @@
 .imagemAjuda{
     float: left;
 }
+a{
+    text-decoration: none;
+}
 
 /*Modificar a imagem ajuda para desktops*/
 @media (min-width: 1024px) {
