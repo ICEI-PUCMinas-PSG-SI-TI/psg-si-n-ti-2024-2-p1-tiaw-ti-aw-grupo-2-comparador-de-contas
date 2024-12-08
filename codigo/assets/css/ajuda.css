@@ -1,0 +1,88 @@
+.imagemAjuda{
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+
+/*Modificar a imagem ajuda para desktops*/
+@media (min-width: 1024px) {
+    .imagemAjuda {
+        margin-top: 5px;
+    }
+}
+
+.inicioAjuda{
+    margin-top:50px;
+}
+
+.pAjuda{
+    margin-left: 50px;
+}
+
+.botaoAjuda{
+    background-color: #0899E5;
+    color:#FFFFFF;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 41px;
+    height: 41px;
+    padding: 9.5px;
+    text-align: center;
+}
+
+
+.topicoAjuda{
+    margin-bottom: 17.5px;
+}
+
+.topicoAjuda h2, .topicoAjuda h3, .topicoAjuda h4, .topicoAjuda h5{
+    display: inline;
+}
+
+.pTopico{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+/*Muda a imagem dependendo se está na versão desktop ou mobile*/
+
+.screenshot {
+    display: none;
+}
+
+
+
+@media(min-width: 768px){
+  .desktop {
+      display: block;
+      width: 70%;
+      margin: 10px
+  }
+}
+
+
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+      width: 70%;
+      display: block;
+      margin: 10px
+    }
+}
+
+.botaoModal{
+  margin-bottom: 15px;
+  position: relative;
+  left: 80%;
+}
+@media (max-width: 768px) {
+    .botaoModal {
+      margin-bottom: 15px;
+      position: relative;
+      left: 60%;
+    }
+}
