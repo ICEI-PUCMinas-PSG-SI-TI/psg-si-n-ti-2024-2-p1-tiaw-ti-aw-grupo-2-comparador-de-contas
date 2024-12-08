@@ -1,37 +1,49 @@
 function atualizaConsumoRealAgua() {
     const consumoRealEl = document.querySelector('#consumoRealAgua');
     const consumoEsperadoEl = document.querySelector('.consumoEsperadoAgua');
-    const botaoSituacao = document.querySelector('.botaoSituacaoAgua');
+    const botaoSituacao = document.querySelector('.botaoSituacaoReal');
+    const statusAtual = document.querySelector('.statusUsuario');
+    const btnStatus = document.querySelector('.botaoStatus');
 
     
     consumoRealEl.classList.remove('bg-danger', 'bg-success', 'bg-warning');
     
-    const textoConsumoReal = parseFloat(consumoRealEl.textContent.replace(' L', ''));
-    const textoConsumoEsperado = parseFloat(consumoEsperadoEl.textContent.replace(' L', ''));
-    
+    const textoConsumoEsperado = parseFloat(
+        consumoEsperadoEl.textContent.replace(' L', '').trim()
+    );
+    const textoConsumoReal = parseFloat(
+        consumoRealEl.textContent.replace(' L', '').trim()
+    );
+
     console.log(textoConsumoReal);
     console.log(textoConsumoEsperado);
     
     if (textoConsumoReal > textoConsumoEsperado) {
         consumoRealEl.classList.add('bg-danger');
         botaoSituacao.classList.add('bg-danger');
-        botaoSituacao.textContent = 'Ruim'; 
+        btnStatus.classList.add('bg-danger');
+        botaoSituacao.textContent = 'Ruim';
+        statusAtual.textContent = 'Ruim';
 
 
     } else if (textoConsumoReal < textoConsumoEsperado) {
         consumoRealEl.classList.add('bg-success');
         botaoSituacao.classList.add('bg-sucess');
+        btnStatus.classList.add('bg-sucess');
         botaoSituacao.textContent = 'Ótimo'; 
+        statusAtual.textContent = 'Ótimo';
 
     } else {
         consumoRealEl.classList.add('bg-warning');
         botaoSituacao.classList.add('bg-warning');
         botaoSituacao.textContent = 'Regular'; 
+        statusAtual.textContent = 'Regular';
+        btnStatus.classList.add('bg-warning');
+
         
     }
 }
 
-atualizaConsumoRealAgua();
 
 function atualizaConsumoRealEnergia() {
     const consumoEnergiaEl = document.querySelector('#consumoRealEnergia');
@@ -62,4 +74,12 @@ function atualizaConsumoRealEnergia() {
 }
 
 
-atualizaConsumoRealEnergia();
+const intervalo = setInterval(() => {
+    const consumoRealEl = document.querySelector('#consumoRealAgua');
+    const consumoEnergiaEl = document.querySelector('#consumoRealEnergia');
+    if (consumoRealEl.textContent.trim() && consumoEnergiaEl.textContent.trim()) {
+        clearInterval(intervalo); 
+        atualizaConsumoRealAgua();
+        atualizaConsumoRealEnergia();
+    }
+}, 500);

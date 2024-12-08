@@ -4,6 +4,10 @@ html, body {
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 #profile-img{ 
     max-width: 40px;
 }
