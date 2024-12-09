@@ -107,16 +107,6 @@
                             <li class="list-inline-item flex-fill text-center">
                                 <a href="lancamentos.html"
                                     class=" text-decoration-none ">Lançamentos</a>
-                            </li>
-                            <li class="list-inline-item flex-fill text-center">
-                                <a href="#" class=" text-decoration-none">Simulação</a>
-                            </li>
-                            <li class="list-inline-item flex-fill text-center">
-                                <a href="#" class=" text-decoration-none">Previsões</a>
-                            </li>
-                            <li class="list-inline-item flex-fill text-center">
-                                <a href="#" class=" text-decoration-none">Dicas</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -178,9 +168,9 @@
                                                 <div class="modal-body">
                                                     <p>Veja o total estimado a ser pago na sua conta de água, com base no consumo esperado e no consumo real.</p>
                                                     <p><strong>Total esperado a pagar:</strong></p>
-                                                    <p>Valor esperado: R$ R$ 85,25</p>
+                                                    <p>Valor esperado: R$85.25</p>
                                                     <p><strong>Total real a pagar:</strong></p>
-                                                    <p>Valor real: R$ <span id="consumoRealAguaValor"></span></p>
+                                                    <p>Valor real: <span id="consumoRealAguaValor"></span></p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -283,7 +273,7 @@
                                         </div>
                                         <div class="real mb-0 me-4">
                                             <p>Situação real</p>
-                                            <button class="btn botaoSituacaoEnergia  textoBranco">Regular</button>
+                                            <button class="btn btn-warning">Regular</button>
                                         </div>
                                     </div>
                                     <div class="consumo d-flex">
@@ -303,23 +293,26 @@
                                 <!-- Chuveiro -->
                                 <div class="mb-4">
                                     <div class="d-flex align-items-center">
-                                        <span class="icon-circle"><i class="fa-solid fa-shower"></i></span>
+
+                                        <span class="icon-circulo"><i class="fa-solid fa-shower"></i></span>
                                         <!-- Esperado -->
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p class="progress-text">81 kWh / 2000 kWh</p>
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p class="descricao-progresso">81 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
                                                 <div class="progress-bar bg-info" role="progressbar" style="width: 4.05%;"></div>
                                             </div>
                                         </div>
+
                                         <!-- Real -->
-                                        <div class="progress-wrapper flex-grow-1 ms-3">
-                                            <p id="chuveiro_energia_real_valor" class="progress-text"> / 2000 kWh</p>
+                                        <div class="container-progresso flex-grow-1 ms-3">
+                                            <p id="chuveiro_energia_real_valor" class="descricao-progresso"> / 2000 kWh</p>
+
                                             <div class="progress mb-2">
-                                                <div id="chuveiro_energia_real" class="progress-bar bg-warning" role="progressbar"></div>
+                                                <div id="chuveiro_energia_real_valor" class="progress-bar bg-warning" role="progressbar"></div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                 
                                 <!-- Geladeira -->
                                 <div class="mb-4">
@@ -330,7 +323,7 @@
                                         <div class="container-progresso flex-grow-1 ms-3">
                                             <p class="descricao-progresso">60 kWh / 2000 kWh</p>
                                             <div class="progress mb-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%;"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 3%;"></div>
                                             </div>
                                         </div>
 
@@ -354,7 +347,7 @@
                                             <p class="descricao-progresso">348 kWh / 2000 kWh</p>
 
                                             <div class="progress mb-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%;"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 17.40%;"></div>
                                             </div>
                                         </div>
                                         <!-- Real -->
